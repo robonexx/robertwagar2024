@@ -1,0 +1,18 @@
+@use '../../styles/base/' as *;
+
+.item_headline {
+  max-width: 80vw;
+  margin: 0;
+  padding: 0 1rem;
+  color: transparent;
+  font-family: $font-headline;
+  -webkit-text-stroke: 1px $color-client-3 !important;
+  background-color: $color-client-alt;
+  font-size: $font-size-xxl;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.335));
+
+  @media (min-width: 768px) {
+     font-size: $font-size-xxl;
+    padding: 0 2rem;
+  }
+}

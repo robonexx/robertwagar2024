@@ -1,0 +1,22 @@
+@use '../../../styles/base/' as *;
+.link {
+    position: relative;
+    margin: 2rem 0;
+    padding: 0.5rem 1rem;
+    width: fit-content;
+    height: fit-content;
+    color: $color-client-2;
+    background-color: $color-bg-alt;
+    font-size: $font-size-l;
+    text-transform: capitalize;
+   
+    text-decoration: none;
+    transition: all 0.4s ease;
+    z-index: 100;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $color-client-4;
+      color: $color-client-1;
+    }
+}

@@ -1,0 +1,50 @@
+@use '../../../styles/base/' as *;
+.content {
+  position: relative;
+  width: 500px;
+  height: 6vh;
+  border: 1px solid $color-client-5;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  color: #fff;
+  z-index: 20;
+}
+
+.users {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.user_name {
+  display: flex;
+  font-size: 1rem;
+  padding-left: 0.3rem;
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.4));
+  text-transform: uppercase;
+
+  > p {
+    margin-right: 1rem;
+  }
+}
+
+.user_circle {
+  border: 1px solid #1e2e3e;
+  margin: 0 1rem;
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.4));
+  border-radius: 50%;
+  width: 46px;
+  height: 46px;
+}

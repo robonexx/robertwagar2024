@@ -1,0 +1,13 @@
+@use '../../../../styles/base/' as *;
+.aboutme {
+  position: relative;
+  width: 100%;
+  color: $color-client-1;
+  font-size: $font-size-m;
+
+  @media (min-width: 960px) {
+    margin: 2rem auto 0;
+    padding-bottom: 4rem;
+    width: 60%;
+  }
+}

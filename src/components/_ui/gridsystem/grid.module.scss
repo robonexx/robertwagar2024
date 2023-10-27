@@ -1,0 +1,30 @@
+$body-width: calc(100vw - 10px);
+$vw: calc($body-width / 100);
+$body-space: calc($vw * 4);
+$gutter: calc($vw * 2);
+$column-size: calc($vw * 10);
+
+.grid {
+  position: relative;
+  margin-top: 4rem;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  column-gap: $gutter;
+  row-gap: 60px;
+  padding-left: $body-space;
+  padding-right: $body-space;
+  z-index: 5;
+}
+.grid_3_col {
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, 1fr);
+}
+@media screen and (min-width: 960px) {
+  .grid {
+    row-gap: 100px;
+  }
+  .grid_3_col {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

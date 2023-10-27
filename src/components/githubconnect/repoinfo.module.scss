@@ -1,0 +1,47 @@
+@use '../../styles/base/' as *;
+.container {
+    position: relative;
+    width: fit-content;
+    padding: 3rem 5rem;
+    border-radius: 25px;
+
+    @media screen and (min-width: 960px) {
+      width: 80%;
+      padding: 3rem 5rem;
+    }
+    
+  
+    & > div:last-child > a {
+      color: $color-client-5;
+    }
+  
+    .content {
+      display: flex;
+      margin-top: 0.5rem;
+  
+      p {
+        margin-right: 1rem;
+        font-weight: bold;
+        color: $color-client-1;
+        font-family: $font-base;
+      }
+  
+      span {
+        font-weight: 400;
+        margin-left: 1rem;
+        color: $color-client-5;
+        font-family: $font-base;
+      }
+  
+      a {
+        
+        color: $color-client-5; 
+        text-decoration: none;
+  
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  

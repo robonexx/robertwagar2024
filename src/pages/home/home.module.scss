@@ -1,0 +1,116 @@
+@use '../../styles/base/' as *;
+
+.home {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  .sidescroll_wrapper {
+    position: absolute;
+    top: 75vh;
+    left: 0;
+    width: 100vw;
+    height: fit-content;
+
+    @media (min-width: 960px) {
+      top: 65vh;
+    }
+  }
+
+  .top_section {
+    position: relative;
+    padding: 2rem 0 2rem 2rem;
+
+    @media (min-width: 960px) {
+      padding: 2rem 0 2rem 4rem;
+    }
+  }
+}
+
+.section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+
+  @media (min-width: 960px) {
+    height: 100vh;
+  }
+
+  h1 {
+    padding: 1rem 0 0 1.5rem;
+
+    @media (min-width: 768px) {
+      padding: 2rem 0 0 4rem;
+    }
+  }
+}
+
+.title {
+  position: relative;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  font-size: $font-size-xxl;
+  background-image: $color-gradient-white;
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  text-transform: uppercase;
+  filter: drop-shadow(10px 10px 10px rgb(0, 0, 0));
+  transition: transform 1s ease;
+  font-family: $font-headline;
+  text-align: center;
+  z-index: 10;
+}
+
+.last {
+  height: 20vh;
+  .highlight {
+      font-weight: 600;
+      font-size: $font-size-xl;
+      color: $color-client-3;
+
+      @media (min-width: 768px) {
+        font-size: $font-size-xxl;
+        line-height: 1;
+      }
+    }
+
+    .dimmed {
+      font-weight: 600;
+      font-size: $font-size-xl;
+      color: $color-client-alt;
+
+      @media (min-width: 768px) {
+        font-size: $font-size-xxl;
+        line-height: 1;
+      }
+    }
+}
+
+.dimmed {
+  width: 100%;
+  height: 10vh;
+  font-weight: 700;
+  font-size: $font-size-xxxl;
+  text-align: center;
+  color: $color-client-alt;
+  text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    font-size: $font-size-xxxl;
+    line-height: 1;
+  }
+}
+
+.button_wrapper {
+    position: absolute;
+    bottom: 5vh;
+    left: 50%;
+    z-index: 10;
+    transform: translate(-50%);
+}
+

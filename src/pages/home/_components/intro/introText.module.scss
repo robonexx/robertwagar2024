@@ -1,0 +1,23 @@
+@use '../../../../styles/base/' as *;
+.text {
+  position: relative;
+  margin-top: 20vh;
+  margin-left: 10%;
+  width: 80%;
+  color: $color-client-1;
+  font-size: $font-size-m;
+  text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: 960px) {
+    margin-top: 10vh;
+    margin-left: 10%;
+    text-align: left;
+  }
+
+  .text > .p {
+    margin: 0px;
+    padding: 1rem 0;
+    position: relative;
+  }
+}

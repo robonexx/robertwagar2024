@@ -1,0 +1,28 @@
+@use '../../styles/base/' as *;
+.wrapper {
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+    position: absolute;
+    display: grid;
+    place-content: center;
+    z-index: -1;
+
+    h1 {
+        margin: 2rem 0;
+        color: $color-client-3;
+        filter: drop-shadow(5px 5px 5px rgba(0,0,0,.335));
+    }
+    
+    &:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 40vh;
+        left: 0;
+        min-width: 100%;
+        height: 100vh;
+        background: linear-gradient(180deg, $color-client-alt 0%, rgba(222, 79, 139, 0) 80%);
+        clip-path: path('M1123.86 65.5719C365.969 -26.5855 -54.4678 -0.960314 -169.95 23.3719L-204.226 22.8601L-252.236 808.743C-252.236 808.743 461.38 783.101 1026.99 814.677C1592.59 846.253 2565.93 906.493 2940.15 891.108C3314.37 875.724 2799.65 816.773 2804.49 714.008C2809.34 611.242 2842.05 95.4247 2722.44 110.416C2572.91 129.156 2071.21 180.769 1123.86 65.5719Z'); 
+        }   
+}

@@ -1,0 +1,21 @@
+@use '../../styles/base/' as *;
+.bg_ellipse {
+  width: 540px;
+  height: 540px;
+  position: absolute;
+  left: -30vw;
+  top: -10vh;
+  z-index: 0;
+  border-radius: 50%;
+  background-color: $color-client-alt;
+  filter: blur(100px);
+  pointer-events: none;
+
+  @media (min-width: 768px) {
+    width: 840px;
+    height: 840px;
+    position: absolute;
+    left: -10vw;
+    top: -5vh;
+  }
+}

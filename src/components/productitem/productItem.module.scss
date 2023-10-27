@@ -1,0 +1,103 @@
+@use '../../styles/base/' as *;
+$body-width: calc(100vw - 10px);
+$vw: calc($body-width / 100);
+$body-space: calc($vw * 6);
+$gutter: calc($vw * 2);
+$column-size: calc($vw * 13);
+$line-height: 1.4;
+$transition-timing-function: cubic-bezier(0.45, 0, 0.55, 1);
+
+.item {
+  position: relative;
+  padding: 2rem 0;
+  min-height: 500px;
+  border-top: 1px solid $color-client-2;
+  border-bottom: 1px solid $color-client-2;
+  transition: all 0.3s ease-in-out;
+
+  &:hover, &:active {
+    background: $color-gradient-alt;
+    cursor: pointer;
+  }
+
+  @media screen and (min-width: 960px) {
+    padding: 2rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+  }
+
+  .read_more {
+    color: $color-client-white;
+    padding: 1rem;
+    position: absolute;
+    bottom: 0;
+    right: 0vw;
+    z-index: 10;
+    pointer-events: none;
+
+    @media screen and (min-width: 960px) {
+      right: 3vw;
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    font-family: $font-base;
+
+    .title {
+      margin-top: calc(($line-height - 1) / 2 * -1em);
+      padding: 0 0.5rem;
+      font-size: $font-size-m;
+      --line-height: 1.4;
+      line-height: $line-height;
+      color: $color-client-1;      
+      letter-spacing: 0.1rem;
+    }
+
+    .year {
+      padding: 0 0.5rem;
+      font-size: $font-size-m;
+      letter-spacing: 0.06em;
+      color: $color-client-2;
+    }
+
+    .tag {
+      padding: 0 0.5rem;
+      font-size: $font-size-base;
+      line-height: 1.4;
+      color: $color-client-5;
+    }
+  }
+  .image {
+      height: 300px;
+      max-height: 500px;
+      margin-top: 20px;
+      display: grid;
+      place-content: center;
+      font-size: 0;
+      overflow: hidden;  
+      object-fit: cover;
+      object-position: center;
+         
+
+
+   > .img {
+      width: 100%;
+      min-height: 300px;
+      height: 100%;
+      transition: opacity 0.2s $transition-timing-function;
+    }
+  }
+}

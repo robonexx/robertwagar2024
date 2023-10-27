@@ -1,0 +1,113 @@
+@use '../../../../styles/base/' as *;
+
+.text_mid {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 3rem;
+
+  @media (min-width: 960px) {
+    padding: 2rem 10rem;
+  }
+
+  .three {
+    position: absolute;
+    top: -30rem;
+    left: 0;
+    font-size: 30rem;
+    font-weight: 700;
+    width: 1000px;
+    color: $color-client-1;
+  }
+
+  .para {
+    color: $color-client-1;
+    font-size: $font-size-xxl;
+    font-weight: 100;
+    line-height: 1;
+  }
+
+  .highlight {
+    font-weight: 700;
+    font-size: $font-size-xxl;
+    color: $color-client-3;
+  }
+
+  .mid_top {
+    position: relative;
+    margin: 10rem 0;
+    max-height: 60vh;
+    width: 100%;
+    color: $color-client-1;
+  }
+
+  .mid {
+    max-height: 40vh;
+    width: 100%;
+    color: $color-client-1;
+    font-family: $font-base;
+    position: relative;
+  }
+
+  .mid_bottom {
+    position: relative;
+    margin: 4rem 0;
+    padding: 2rem 0;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    @media (min-width: 960px) {
+      display: grid;
+      grid-template-rows: repeat(4, 1fr);
+      grid-template-columns: repeat(2, 1fr);
+      padding: 4rem;
+    }
+
+    .para {
+      color: $color-client-1;
+      font-size: $font-size-xxl;
+      font-weight: 100;
+      line-height: 1;
+
+      @media (min-width: 960px) {
+        font-size: $font-size-xxl;
+        line-height: 1;
+      }
+    }
+
+    .highlight {
+      font-weight: 600;
+      font-size: $font-size-xxl;
+      color: $color-client-3;
+
+      @media (min-width: 960px) {
+        font-size: $font-size-xxl;
+        line-height: 1;
+      }
+    }
+
+    .bottom_left {
+      width: 100%;
+      @media (min-width: 960px) {
+        width: 50%;
+        margin-bottom: 10rem;
+        grid-row-start: 3;
+        grid-row-end: 4;
+      }
+    }
+
+    .bottom_right {
+      width: 100%;
+      @media (min-width: 960px) {
+        grid-column-start: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+      }
+    }
+  }
+}

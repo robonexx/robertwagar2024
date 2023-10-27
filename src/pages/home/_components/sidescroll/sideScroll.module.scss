@@ -1,0 +1,69 @@
+@use '../../../../styles/base/' as *;
+.sidescroll {
+  position: relative;
+  width: 100%;
+  height: 20rem;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  white-space: nowrap;
+  overflow: hidden;
+
+  .p {
+    font-family: monospace;
+    position: absolute;
+    width: 100svw;
+    height: inherit;
+
+    font-size: $font-size-xxxl;
+    // outline effect!
+    -webkit-text-stroke: 0.1rem $color-client-5;
+    color: transparent;
+    text-decoration: none;
+    font-weight: 900;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: color 0.4s ease-in-out;
+
+    @media (min-width: 960px) {
+      font-size: $font-size-xxxl;
+      height: 10rem;
+      width: inherit;
+    }
+  }
+
+  .first {
+    animation: first 15s linear infinite;
+
+    @media (min-width: 960px) {
+      animation: first 30s linear infinite;
+    }
+  }
+
+  /* .second {
+    animation: second 15s linear infinite;
+    @media (min-width: 960px) {
+      animation: second 30s linear infinite;
+    }
+  } */
+}
+
+// two keyframes for the two identical elements for the scroll effect
+@keyframes first {
+  from {
+    left: 0%;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+@keyframes second {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0%;
+  }
+}

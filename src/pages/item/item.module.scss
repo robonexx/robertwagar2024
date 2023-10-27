@@ -1,0 +1,250 @@
+@use '../../styles/base/' as *;
+
+// for id Fullscreen items page
+.wrapper {
+  padding: 5vh 0;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  max-height: 150vh;
+  background-color: transparent;
+  display: block;
+
+  @media screen and (min-width: 960px) {
+    padding: 15vh 6rem;
+  }
+
+  .header_buttons {
+    position: relative;
+    margin: 2rem auto 0;
+    width: 90%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (min-width: 960px) {
+      margin: 2rem auto;
+    }
+
+    .home_link {
+      position: relative;
+      color: $color-client-4;
+      background-color: $color-client-1;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      transition: all 0.4s ease;
+      z-index: 100;
+      cursor: pointer;
+  
+      &:hover {
+        background-color: $color-client-4;
+        color: $color-client-1;
+      }
+    }
+  
+    .go_back {
+      position: relative;
+      color: $color-client-4;
+      background-color: $color-client-1;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      transition: all 0.4s ease;
+      z-index: 100;
+      cursor: pointer;
+  
+      &:hover {
+        background-color: $color-client-4;
+        color: $color-client-1;
+      }
+    }
+  
+  }
+
+  .title_wrapper {
+    position: relative;
+    margin: 1rem auto 0;
+    padding: 0.5rem 0;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+
+    .top_title {
+      position: relative;
+      color: $color-client-1;
+      font-weight: 400;
+    }
+
+    .title {
+      padding: 1rem 0.5rem;
+      color: $color-client-3;
+      font-size: $font-size-xl;
+      font-family: $font-headline;
+      background-color: $color-client-alt;
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
+      transition: color 0.3s ease-in-out;
+
+      @media screen and (min-width: 960px) {
+        font-size: $font-size-xxl;
+        padding: 0 2rem;
+      }
+    }
+  }
+
+  
+  .card {
+    position: relative;
+    margin: 0 auto 0;
+    padding-bottom: 2rem;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-client-alt;
+
+    @media (min-width: 960px) {
+      margin: 2rem auto 0;
+      padding-bottom: 4rem;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-around;
+    }
+
+    .img {
+      padding: 2rem 0 1rem;
+      width: 100%;
+      height: 100%;
+      display: grid;
+      place-content: center;
+      font-size: 0;
+      overflow: hidden;
+      cursor: pointer;
+
+      @media screen and (min-width: 960px) {
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+      }
+
+      > img {
+        position: relative;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        object-position: center;
+        filter: drop-shadow(1px 1px 1px #000000)
+          drop-shadow(0px 8px 10px rgba(0, 0, 0, 0.825));
+
+        @media screen and (min-width: 960px) {
+          position: relative;
+          margin: auto;
+          width: 80%;
+         
+        }
+      }
+    }
+    .details {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      min-height: 41vh;
+      padding: 2rem 0.5rem;
+      z-index: 10;
+
+      @media screen and (min-width: 960px) {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        max-width: 50vw;
+        max-height: 50vh;
+      }
+
+      .inner {
+        margin: 0;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+
+        p {
+          font-size: $font-size-m;
+          color: $color-client-2;
+          font-weight: 400;
+          margin-bottom: 0.25rem;
+
+          @media screen and (min-width: 960px) {
+            width: 100%;
+          }
+        }
+        .year {
+          color: $color-client-2;
+          @media screen and (min-width: 980px) {
+          }
+        }
+        .tag {
+          color: $color-client-5;
+        }
+        .desc {
+          color: $color-client-1;
+        }
+
+        .btn {
+          margin-right: 1rem;
+          border-radius: 8px;
+          border: 1px solid transparent;
+          padding: 0.6em 1.2em;
+          font-size: 1em;
+          font-weight: 500;
+          font-family: inherit;
+          color: $color-client-1;
+          background-color: $color-bg;
+          cursor: pointer;
+          transition: border-color 0.25s;
+
+          &.active {
+            background-color: $color-client-1;
+            color: $color-client-black;
+            outline: 4px auto -webkit-focus-ring-color;
+          }
+
+          &:hover {
+            border-color: $color-client-1;
+            background-color: $color-client-4;
+          }
+        }
+
+        .tech {
+          color: $color-client-5;
+        }
+      }
+    }
+    .next_btn {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      padding: 0.5rem 1rem;
+      width: 100%;
+      
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $color-client-alt;
+      color: $color-client-1;
+      text-decoration: none;
+      transition: all 0.4s ease;
+      z-index: 100;
+      cursor: pointer;
+
+      :last-child {
+        padding-top: 0.25rem;
+      }
+
+      &:hover {
+        background-color: $color-client-4;
+        color: white;
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@use './styles/base/' as *;
+.main {
+    position: relative;
+    max-width: 100vw;
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  .scrolling {
+    position: fixed;
+    top: 30vh;
+    right: 5vw;
+    width: fit-content;
+    background: $color-bg-dark;
+    color: $color-client-1;
+    z-index: 10;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: 2px solid $color-client-black;
+    display: none;
+  }
