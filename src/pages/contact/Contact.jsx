@@ -1,5 +1,5 @@
 import styles from './contact.module.scss'
-import Coffee from '../../components/coffee/Coffee';
+import Coffee from './_components/coffee/Coffee';
 import Headline from '../../components/headline/Headline';
 import BgEllipse from '../../components/bgellipse/BgEllipse';
 import PageTransition from '../../components/animations/PageTransition';

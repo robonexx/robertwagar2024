@@ -1,10 +1,10 @@
-@use '../../styles/base/' as *;
+@use '../../../../styles/base/' as *;
 .svg-container {
   position: absolute;
   top: 0;
   right: 5vw;
   left: auto;
-  width: 80vw;
+  width: 82.5vw;
   height: 100svh;
   text-align: center;
   z-index: 1;
@@ -13,13 +13,13 @@
   @media screen and (min-width: 960px) {
     right: 0;
     left: auto;
-    width: 30vw;
+    width: 27.5vw;
   }
 }
 
 #coffee {
   position: relative;
-  stroke: $color-client-alt;
+  stroke: $color-client-2;
   stroke-width: 2;
   display: block;
   height: 100%;
