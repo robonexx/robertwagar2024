@@ -1,6 +1,5 @@
 import PageTransition from '../../components/animations/PageTransition';
 import BgEllipse from '../../components/bgellipse/BgEllipse';
-import CreateCard from '../../components/createcard/CreateCard';
 import GithubConnect from '../../components/githubconnect/GithubConnect';
 import Headline from '../../components/headline/Headline';
 import { Silhuette } from '../../components/silhuette/Silhuette';
