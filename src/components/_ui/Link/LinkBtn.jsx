@@ -1,14 +1,11 @@
-/* eslint-disable react/prop-types */
-import { HashLink } from 'react-router-hash-link';
-
-// styles
-import styles from './link.module.scss';
+import { Link } from 'react-router-dom';
+import styles from './link.module.scss'
 
 const LinkBtn = ({ href, title }) => {
   return (
-    <HashLink to={`${href}`} className={styles.link}>
+    <Link to={href} target='_blank' rel='noopener noreferrer' className={styles.link}>
       {title}
-    </HashLink>
+    </Link>
   );
 };
 

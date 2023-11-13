@@ -7,12 +7,23 @@ import IMG6 from '../../assets/images/projectimages/funkcamp.png';
 
 export const productData = [
   {
+    title: 'Funkcamp 2024',
+    year: '2023',
+    tag: '#website #desing #in-production',
+    tech: 'Javascript, Html, Css',
+    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, obcaecati incidunt magnam doloremque quibusdam id doloribus rem modi eligendi eveniet eaque autem. Nisi debitis, enim a natus tenetur repudiandae saepe?',
+    id: 1,
+    image: IMG6,
+    github: 'https://github.com/robonexx/funkcamp2024',
+    demo: 'https://funkcamp2024.vercel.app/',
+  },
+  {
     title: 'VGA',
     year: '2022',
     tag: '#website',
     tech: 'Javascript, Html, Css',
     desc: 'Video Game Archives, is a website project done for the game lovers. It is a video game search engine using the RAWG, io, api, the project is done in vanilla js, html and css. You can try the demo or check the repo. Have fun',
-    id: 1,
+    id: 2,
     image: IMG1,
     github: 'https://github.com/robonexx/vga2023',
     demo: 'https://vga2023.surge.sh/',
@@ -23,10 +34,10 @@ export const productData = [
     tag: '#website #re-design #project-managment',
     tech: 'Javascript, Html, Css',
     desc: 'This project was a remake of the lockerlegends.net website. Tech used next js, wordpress, sass, framer-motion. You can check the live demo and the repo, just follow the links. Have fun',
-    id: 2,
+    id: 4,
     image: IMG2,
     github: 'https://github.com/robonexx/lockerlegends2022',
-    demo: 'https://www.lockerlegends.org/'
+    demo: 'https://www.lockerlegends.org/',
   },
   {
     title: 'Net News',
@@ -37,7 +48,7 @@ export const productData = [
     id: 3,
     image: IMG3,
     github: 'https://github.com/robonexx/netnews',
-    demo: 'https://netnews23.vercel.app/'
+    demo: 'https://netnews23.vercel.app/',
   },
   {
     title: 'Gamez',
@@ -45,7 +56,7 @@ export const productData = [
     tag: '#website #games',
     tech: 'Javascript, Html, Css',
     desc: 'This project was to practice on javascript, html and css, the goal was to create one game, and it ended up being 2 games. Rock, Paper, Scissors and a word guessing game. Fun Fun Fun',
-    id: 4,
+    id: 6,
     image: IMG4,
   },
   {
@@ -54,16 +65,7 @@ export const productData = [
     tag: '#website #ux #prototyping',
     tech: 'React, styled-component, mapbox, higher order functions, ux, ui',
     desc: 'This project was an implementation of ux. The idea was to improve on an existing product or service, and do research about it. I choose S L Stockholm commuter transportation, adding bikes as a new way to travel including in the monthly card for SL',
-    id: 5,
+    id: 7,
     image: IMG5,
-  },
-  {
-    title: 'Funkcamp 2024',
-    year: '2023',
-    tag: '#website #desing #in-production',
-    tech: 'Javascript, Html, Css',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, obcaecati incidunt magnam doloremque quibusdam id doloribus rem modi eligendi eveniet eaque autem. Nisi debitis, enim a natus tenetur repudiandae saepe?',
-    id: 6,
-    image: IMG6,
   },
 ];

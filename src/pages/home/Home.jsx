@@ -14,7 +14,7 @@ import { productData } from '../../assets/constants/productData';
 import useMediaQuery from '../../hooks/useMediaQuery';
 import Grid from '../../components/_ui/gridsystem/Grid';
 import GridItem from '../../components/_ui/gridsystem/GridItem';
-import LinkBtn from '../../components/_ui/Link/LinkBtn';
+import LinkBtn from '../../components/_ui/Link/HashLinkBtn';
 
 export const Home = () => {
   const isDesktop = useMediaQuery('(min-width: 960px)');

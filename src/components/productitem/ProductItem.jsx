@@ -1,5 +1,6 @@
 import styles from './productItem.module.scss';
 import { Link } from 'react-router-dom';
+import {HiArrowUpRight} from 'react-icons/hi2'
 
 // eslint-disable-next-line react/prop-types, no-unused-vars
 const ProductItem = ({ title, year, tag, image, id }) => {
@@ -10,11 +11,11 @@ const ProductItem = ({ title, year, tag, image, id }) => {
         <p className={styles.year}>{year}</p>
         <p className={styles.tag}>{tag}</p>
         <div className={styles.image}>
-          <img className={styles.img} src={`${image}`} alt={title} />
+          <img src={`${image}`} alt={title} />
         </div>
       </div>
       <Link to={`/work/${id}`} />
-      <p className={styles.read_more}>read more</p>
+      <p className={styles.read_more}><HiArrowUpRight/></p>
     </div>
   );
 };

@@ -19,7 +19,7 @@ $column-size: calc($vw * 13);
     display: flex;
     gap: $gutter;
     justify-content: space-between;
-    background-color: $color-bg;
+    background: $color-bg;
 
     :nth-child(2) {
       display: none;

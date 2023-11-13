@@ -2,10 +2,12 @@ import { useState, useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { productData } from '../../assets/constants/productData';
-import { AiFillCaretRight, AiFillHome } from 'react-icons/ai';
+import { AiFillCaretRight, AiFillHome, AiFillCaretLeft } from 'react-icons/ai';
 
 import styles from './item.module.scss';
 import TextToSpeech from '../../components/texttospeech/textToSpeech';
+import HashLinkBtn from '../../components/_ui/Link/HashLinkBtn';
+import LinkBtn from '../../components/_ui/Link/LinkBtn';
 
 const easing = [0.6, -0.05, 0.01, 0.99];
 
@@ -37,7 +39,7 @@ const fadeInUp = {
 const Item = () => {
   const { id } = useParams();
   const [item, setItem] = useState(null);
-  const [showDescription, setShowDescription] = useState(false);
+ /*  const [showDescription, setShowDescription] = useState(false);
 
   const handleRead = () => {
     setShowDescription(false);
@@ -45,7 +47,7 @@ const Item = () => {
 
   const handleListen = () => {
     setShowDescription(true);
-  };
+  }; */
 
   useEffect(() => {
     const fetchData = async () => {
@@ -69,14 +71,14 @@ const Item = () => {
     return <div>Loading...</div>;
   }
 
-  const { title, year, tag, desc, tech, image } = item;
+  const { title, year, tag, desc, tech, image, github, demo } = item;
 
   return (
     <motion.div initial='initial' animate='animate' exit={{ opacity: 0 }}>
       <div className={styles.wrapper}>
         <div className={styles.header_buttons}>
           <Link to='/work' className={styles.go_back}>
-            All Work
+           <AiFillCaretLeft/> <span>work</span>
           </Link>
           <Link to='/' className={styles.home_link}>
             <AiFillHome />
@@ -109,6 +111,7 @@ const Item = () => {
               transition={{ duration: 0.25 }}
             />
           </motion.div>
+          
           <div className={styles.details}>
             <motion.div variants={stagger} className={styles.inner}>
               <motion.div variants={fadeInUp}>
@@ -117,7 +120,7 @@ const Item = () => {
               </motion.div>
               <motion.div variants={fadeInUp}>
                 <p>Description:</p>
-                {window.innerWidth > 768 ? (
+               {/*  {window.innerWidth > 768 ? (
                   <div>
                     <button
                       className={
@@ -142,17 +145,20 @@ const Item = () => {
                   </div>
                 ) : (
                   <div></div>
-                )}
-                {!showDescription ? (
+                )} */}
+               {/*  {!showDescription ? ( */}
                   <p className={styles.desc}>{desc}</p>
-                ) : (
+                {/* ) : (
                   <TextToSpeech text={desc} />
-                )}
+                )} */}
               </motion.div>
               <motion.div variants={fadeInUp}>
                 <p>TECH:</p>
                 <p className={styles.tech}>{tech}</p>
               </motion.div>
+              <div className={styles.links}>
+                <LinkBtn href={github} title='Code' /><LinkBtn href={demo} title='Demo' />
+          </div>
             </motion.div>
           </div>
           <Link
