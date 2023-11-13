@@ -16,9 +16,6 @@ const Playground = () => {
       <Silhuette />
       <BgEllipse />
       <section>
-        <CreateCard />
-      </section>
-      <section>
         <GithubConnect />
       </section>
     </div>
