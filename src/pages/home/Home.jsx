@@ -25,7 +25,7 @@ export const Home = () => {
       (async () => {
         const elRef = containerRef.current;
         const LocomotiveScroll = (await import('locomotive-scroll')).default;
-        const locomotiveScroll = new LocomotiveScroll({
+         new LocomotiveScroll({
           el: elRef,
           smooth: true,
           smoothMobile: true,

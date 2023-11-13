@@ -4,8 +4,8 @@ import gsap from 'gsap';
 import styles from './introText.module.scss';
 
 const lines = [
-  'Frontend deveoper based in Stockholm, Sweden.',
-  'I like creating smart user interfaces & useful interactions',
+  'I´m a frontend developer that likes',
+  'creating smart user interfaces & useful interactions',
   'Responsive and "up to date" websites',
   'Developing rich web experiences & applications',
 ];
