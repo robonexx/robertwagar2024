@@ -1,8 +1,6 @@
 /* eslint-disable no-unused-vars */
-import { useEffect, useRef } from 'react';
+import { useRef } from 'react';
 import { Background } from '../../components/background/Background';
-import { Link } from 'react-router-dom';
-import { Silhuette } from '../../components/silhuette/Silhuette';
 import styles from './home.module.scss';
 import BgEllipse from '../../components/bgellipse/BgEllipse';
 import SideScroll from './_components/sidescroll/SideScroll';
@@ -17,24 +15,7 @@ import GridItem from '../../components/_ui/gridsystem/GridItem';
 import LinkBtn from '../../components/_ui/Link/HashLinkBtn';
 
 export const Home = () => {
-  const isDesktop = useMediaQuery('(min-width: 960px)');
-  const containerRef = useRef(null);
-
-  useEffect(() => {
-    if (isDesktop) {
-      (async () => {
-        const elRef = containerRef.current;
-        const LocomotiveScroll = (await import('locomotive-scroll')).default;
-         new LocomotiveScroll({
-          el: elRef,
-          smooth: true,
-          smoothMobile: true,
-        });
-      })();
-    } else {
-      return;
-    }
-  }, [isDesktop]);
+ 
   return (
     <div className={styles.home}>
       <PageTransition />
