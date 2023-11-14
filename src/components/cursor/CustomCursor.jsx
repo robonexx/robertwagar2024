@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useLayoutEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useCursor } from '../../context/CustomCursorContext';
 import styles from './cursor.module.scss';
@@ -8,7 +8,7 @@ const sizes = { l: 300, m: 100, s: 50 };
 const CustomCursor = () => {
   const { cursorState, dispatchCursor } = useCursor();
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const onMouseMove = (e) => {
       dispatchCursor({
         type: 'setPosition',
@@ -28,14 +28,14 @@ const CustomCursor = () => {
     cursorResizeL: {
       width: sizes.l,
       height: sizes.l,
-      x: cursorState.position.x - sizes.l / 2,
-      y: cursorState.position.y - sizes.l / 2,
+      x: cursorState.position.x - 150,
+      y: cursorState.position.y - 150,
     },
     cursorResizeM: {
       width: sizes.m,
       height: sizes.m,
-      x: cursorState.position.x - sizes.m / 2,
-      y: cursorState.position.y - sizes.m / 2,
+      x: cursorState.position.x - 50,
+      y: cursorState.position.y - 50,
     },
   };
 

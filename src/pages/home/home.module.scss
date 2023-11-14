@@ -69,26 +69,26 @@
 .last {
   height: 20vh;
   .highlight {
-      font-weight: 600;
-      font-size: $font-size-xl;
-      color: $color-client-3;
+    font-weight: 600;
+    font-size: $font-size-xl;
+    color: $color-client-3;
 
-      @media (min-width: 768px) {
-        font-size: $font-size-xxl;
-        line-height: 1;
-      }
+    @media (min-width: 768px) {
+      font-size: $font-size-xxl;
+      line-height: 1;
     }
+  }
 
-    .dimmed {
-      font-weight: 600;
-      font-size: $font-size-xl;
-      color: $color-client-alt;
+  .dimmed {
+    font-weight: 600;
+    font-size: $font-size-xl;
+    color: $color-client-alt;
 
-      @media (min-width: 768px) {
-        font-size: $font-size-xxl;
-        line-height: 1;
-      }
+    @media (min-width: 768px) {
+      font-size: $font-size-xxl;
+      line-height: 1;
     }
+  }
 }
 
 .dimmed {
@@ -107,10 +107,9 @@
 }
 
 .button_wrapper {
-    position: absolute;
-    bottom: 5vh;
-    left: 50%;
-    z-index: 10;
-    transform: translate(-50%);
+  position: absolute;
+  bottom: 5vh;
+  left: 50%;
+  z-index: 10;
+  transform: translate(-50%);
 }
-
