@@ -1,5 +1,4 @@
-/* eslint-disable no-unused-vars */
-import { useRef } from 'react';
+import { useState, useEffect } from 'react';
 import { Background } from '../../components/background/Background';
 import styles from './home.module.scss';
 import BgEllipse from '../../components/bgellipse/BgEllipse';
@@ -9,12 +8,36 @@ import Hero from './_components/hero/Hero';
 import ProductList from '../../components/productlist/ProductList';
 import ProductItem from '../../components/productitem/ProductItem';
 import { productData } from '../../assets/constants/productData';
-import useMediaQuery from '../../hooks/useMediaQuery';
 import Grid from '../../components/_ui/gridsystem/Grid';
 import GridItem from '../../components/_ui/gridsystem/GridItem';
 import LinkBtn from '../../components/_ui/Link/HashLinkBtn';
+import { useCursor } from '../../context/CustomCursorContext'; 
 
 export const Home = () => {
+  const { cursorState, dispatchCursor } = useCursor();
+
+  useEffect(() => {
+    console.log('Cursor State:', cursorState);
+  }, [cursorState]);
+
+  const handleMouseEnter = () => {
+    console.log('Mouse Enter');
+    dispatchCursor({
+      type: 'setVariant',
+      variant: 'cursorResizeL',
+    });
+  };
+
+  const handleMouseLeave = () => {
+    console.log('Mouse Leave');
+    dispatchCursor({
+      type: 'setVariant',
+      variant: 'cursorDefault',
+    });
+  };
+
+  
+
   return (
     <div className={styles.home}>
       <PageTransition />
@@ -23,7 +46,9 @@ export const Home = () => {
         <SideScroll title='Developing user experiences, interactions & bringing ideas to life' />
       </div>
       <section className={styles.section}>
-        <h1>A few projects</h1>
+        <h1
+        onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
+        >A few projects</h1>
         <BgEllipse />
         <ProductList>
           {productData &&
@@ -75,3 +100,58 @@ export const Home = () => {
     </div>
   );
 };
+
+
+/*  const [position, setPosition] = useState({ x: 0, y: 0 });
+  const [cursorVariant, setCursorVariant] = useState('cursorDefault');
+
+    useEffect(() => {
+    addEventListeners();
+    return () => removeEventListeners();
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  const addEventListeners = () => {
+    document.addEventListener('mousemove', onMouseMove);
+  };
+
+  const removeEventListeners = () => {
+    document.removeEventListener('mousemove', onMouseMove);
+  };
+
+  const onMouseMove = (e) => {
+    setPosition({
+      x: e.clientX,
+      y: e.clientY,
+    });
+  };
+  const cursorLarge = () => setCursorVariant('cursorResizeL');
+  const cursorMedium = () => setCursorVariant('cursorResizeM');
+  const cursorReset = () => setCursorVariant('cursorReset');
+  const cursorArticle = () => setCursorVariant('cursorArticle');
+
+  const variants = {
+    cursorReset: {
+      x: position.x,
+      y: position.y,
+    },
+    cursorResizeL: {
+      height: 300,
+      width: 300,
+      x: position.x - 150,
+      y: position.y - 150,
+    },
+    cursorResizeM: {
+      height: 100,
+      width: 100,
+      x: position.x - 50,
+      y: position.y - 50,
+    },
+    cursorArticle: {
+      height: 50,
+      width: 50,
+      x: position.x - 25,
+      y: position.y - 25,
+    },
+  }; */

@@ -4,6 +4,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  cursor: none;
+  cursor: pointer;
 }
   
 
@@ -14,6 +16,7 @@ html, body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
  body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video{
   font-size: 100%;
   font-family: $font-base;
@@ -118,4 +121,13 @@ p {
   line-height: 1.5;
   z-index: 2;
   color: $color-client-1;
+}
+
+.cursor {
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 999;
 }
