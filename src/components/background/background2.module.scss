@@ -33,8 +33,8 @@ $column-size: calc($vw * 13);
     } */
 
     div {
-      border-left: 1px solid $color-client-alt;
-      border-right: 1px solid $color-client-alt;
+      border-left: 1px solid $color-client-5;
+      border-right: 1px solid $color-client-5;
     }
 
     @media screen and (min-width: 960px) {

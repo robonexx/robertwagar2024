@@ -4,10 +4,11 @@ import gsap from 'gsap';
 import styles from './introText.module.scss';
 
 const lines = [
-  'I´m a frontend developer that likes',
+  'Hi I´m Rob,',
+  'a frontend developer that likes',
   'creating smart user interfaces & useful interactions',
-  'Responsive and "up to date" websites',
   'Developing rich web experiences & applications',
+  'keeping myself updated on the latest tech',
 ];
 
 export default function IntroText() {

@@ -15,7 +15,6 @@ import GridItem from '../../components/_ui/gridsystem/GridItem';
 import LinkBtn from '../../components/_ui/Link/HashLinkBtn';
 
 export const Home = () => {
- 
   return (
     <div className={styles.home}>
       <PageTransition />
@@ -39,10 +38,10 @@ export const Home = () => {
           <GridItem>
             <h2>Github</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Aspernatur repudiandae nemo doloremque totam velit quibusdam. A ea
-              velit dolorum, omnis, porro aliquam dolores minima exercitationem
-              ab nostrum at quisquam perspiciatis!
+              I've been playing around with some cool stuff on GitHub thru the
+              past years. There is Check out my latest projects. There's a bit
+              of everything, so feel free to take a peek and let me know what
+              you think! Cheers! 🚀
             </p>
             <LinkBtn
               href='https://github.com/robonexx'
@@ -52,24 +51,23 @@ export const Home = () => {
             />
           </GridItem>
           <GridItem>
-            <h2>Components</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Aspernatur repudiandae nemo doloremque totam velit quibusdam. A ea
-              velit dolorum, omnis, porro aliquam dolores minima exercitationem
-              ab nostrum at quisquam perspiciatis!
-            </p>
-            <LinkBtn href='./work/#components' title='check components' />
-          </GridItem>
-          <GridItem>
             <h2>Projects / work</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Aspernatur repudiandae nemo doloremque totam velit quibusdam. A ea
-              velit dolorum, omnis, porro aliquam dolores minima exercitationem
-              ab nostrum at quisquam perspiciatis!
+              You can also check some more projects right here. Take a peek at
+              my cool projects. From tech wonders to creative gems, there's a
+              bit of everything.
             </p>
             <LinkBtn href='./work/' title='work' />
+          </GridItem>
+          <GridItem>
+            <h2>Components</h2>
+            <p>
+              Feel free to explore some of the components I've crafted. For a
+              broader collection, you can find more on my GitHub. Here, I've
+              highlighted a few that can be beneficial for a variety of
+              projects.
+            </p>
+            <LinkBtn href='./work/#components' title='check components' />
           </GridItem>
         </Grid>
         {/* <Silhuette /> */}

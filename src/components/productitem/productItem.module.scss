@@ -16,7 +16,7 @@ $transition-timing-function: cubic-bezier(0.45, 0, 0.55, 1);
   transition: all 0.3s ease-in-out;
 
   &:hover, &:active {
-    background: $color-gradient-alt;
+    background: $color-gradient-black;
     cursor: pointer;
 
     .image {
@@ -69,13 +69,17 @@ $transition-timing-function: cubic-bezier(0.45, 0, 0.55, 1);
       line-height: $line-height;
       color: $color-client-1;      
       letter-spacing: 0.1rem;
+       -webkit-text-stroke: 1px solid white;
     }
 
     .year {
+      margin: 0.5rem;
       padding: 0 0.5rem;
+      width: fit-content;
       font-size: $font-size-m;
       letter-spacing: 0.06em;
       color: $color-client-2;
+      border: 1px solid $color-client-1;
     }
 
     .tag {
@@ -83,7 +87,7 @@ $transition-timing-function: cubic-bezier(0.45, 0, 0.55, 1);
       padding: 0 0.5rem;
       font-size: $font-size-base;
       line-height: 1.4;
-      color: $color-client-5;
+      color: $color-client-3;
     }
   }
   .image {

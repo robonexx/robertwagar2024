@@ -10,8 +10,8 @@
   height: 4rem;
   display: grid;
   place-content: center;
-  color: $color-client-white;
-  background: $color-bg-alt;
+  color: $color-client-1;
+  background: $color-client-menu;
   overflow: hidden;
   z-index: 1002;
   filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.349));
@@ -31,8 +31,8 @@
 }
 
 .bg_color {
-  color: $color-client-5;
-  background: $color-bg;
+  color: $color-client-3;
+  background: $color-client-menu-alt;
   border: 1px solid $color-client-5;
 
   @media screen and (min-width: 768px) {

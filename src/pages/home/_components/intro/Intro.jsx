@@ -23,12 +23,12 @@ const Intro = () => {
 
     timeline.from(
       introImg,
-      { height: '100vh', width: '100vw', opacity: 0, filter: "blur(10px)" },
+      { height: '100vh', width: '100vw', opacity: 0 },
       0
     );
     timeline.to(
       introImg,
-      { height: '200px', width: '80vw', opacity: 1, duration: 0.6, delay: 2, filter: "blur(0px)" },
+      { height: '200px', width: '80vw', opacity: 1, duration: 0.6, delay: 2, filter: 'brightness(15%)' },
       0
     );
   }, []);
@@ -45,8 +45,7 @@ const Intro = () => {
           <img src={IMG2} alt='Robert Wägar' loading='lazy' />
         </div>
         <h1 className={styles.headline} data-scroll data-scroll-speed='-0.3'>
-          {/*  [kɹiːˌe͡ɪtˈɪvɪti] */}
-          Robert Wägar
+           [kɹiːˌe͡ɪtˈɪvɪti]
         </h1>
       </div>
     </div>
