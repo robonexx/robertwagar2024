@@ -9,8 +9,6 @@ import Education from './_components/education/Education';
 import MeButtons from './_components/mebuttons/MeButtons';
 import styles from './about.module.scss';
 
-const categories = ['me', 'capabilities', 'education'];
-
 const About = () => {
   const [category, setCategory] = useState('me');
 
