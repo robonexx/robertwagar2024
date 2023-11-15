@@ -13,8 +13,12 @@
     border: none;
     background: none;
 
-    &:hover {
+    &:hover,
+    &:active {
+        filter: drop-shadow(2px 2px 5px darken($color-client-2, 30%));
+
       svg {
+        transform: translateY(-3px);
         cursor: pointer;
         stroke: $color-client-1;
       }

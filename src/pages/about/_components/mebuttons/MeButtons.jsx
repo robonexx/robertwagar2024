@@ -6,17 +6,21 @@ import { LuBrainCircuit } from 'react-icons/lu';
 // styles
 import styles from './mebuttons.module.scss';
 
-const MeButtons = () => {
+const MeButtons = ({ setCategory }) => {
+  const HandleChoice = (category) => {
+    setCategory(category);
+  };
+
   return (
     <div className={styles.mebuttons}>
       <button>
-        <SiAboutdotme />
+        <SiAboutdotme onClick={() => HandleChoice('me')} />
       </button>
       <button>
-        <LuBrainCircuit />
+        <LuBrainCircuit onClick={() => HandleChoice('capabilities')} />
       </button>
       <button>
-        <IoSchool />
+        <IoSchool onClick={() => HandleChoice('education')} />
       </button>
     </div>
   );

@@ -25,12 +25,12 @@ export const Reveal = ({ children, width = 'fit-content' }) => {
     <div className={`${styles.reveal} ${width}`} ref={ref}>
       <motion.div
         variants={{
-          hidden: { opacity: 0, y: 75 },
-          visible: { opacity: 1, y: 0 },
+          hidden: { opacity: 0 },
+          visible: { opacity: 1},
         }}
         initial='hidden'
         animate={mainControls}
-        transition={{ duration: 0.6, delay: 0.2 }}
+        transition={{ duration: 1, delay: 0.3 }}
       >
         {children}
       </motion.div>
@@ -42,7 +42,7 @@ export const Reveal = ({ children, width = 'fit-content' }) => {
         }}
         initial='hidden'
         animate={slideControls}
-        transition={{ duration: 0.6, delay: 0.6, ease: 'easeOut' }}
+        transition={{ duration: 0.8, delay: 0.1, ease: 'easeOut' }}
       ></motion.div>
     </div>
   );

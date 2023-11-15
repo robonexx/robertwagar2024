@@ -2,11 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { motion, useAnimation, useInView } from 'framer-motion';
 import './wordAnimation.scss';
 
-interface TextWordAnimationProps {
-  text: string;
-}
-
-const WordFromLeft: React.FC<TextWordAnimationProps> = ({
+const WordFromLeft = ({
   text,
 }) => {
   const ref = useRef(null);

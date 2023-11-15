@@ -1,29 +1,69 @@
 @use '../../../../styles/base/' as *;
 .capabilities {
-  position: relative;
-  width: 100%;
-  color: $color-client-1;
-  font-size: $font-size-m;
-
-  @media (min-width: 960px) {
-    margin: 2rem 0;
-    padding-bottom: 4rem;
-    width: 60%;
-    align-self: center;
-  }
-
-  div {
-    display: flex;
-    align-items: center;
+    position: relative;
+    width: 100%;
+    color: $color-client-1;
+    font-size: $font-size-m;
   
-    img {
-      margin-left: 1rem;
-      max-height: 2rem;
+    @media (min-width: 960px) {
+      padding-bottom: 4rem;
+      width: 70%;
+      align-self: center;
     }
-  }
+  
+    @media (min-width: 1200px) {
+      padding-bottom: 4rem;
+      width: 60vw;
+      align-self: center;
+    }
+  
+    .top {
+      margin: 2rem 0 1rem;
+      display: flex;
+      align-items: center;
+    }
 
+    section {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-evenly;
 
-  p {
+        .wrapper {
+            width: 25vw;
+            margin: 1rem;
+            padding: 1rem 0;
+            /* border: 1px solid $color-client-5; */
+            display: flex;
+            flex-direction: column;
+            transition: background 0.3s ease-in-out;
 
-  }
+            &:hover {
+                cursor: pointer;
+                background-color: $color-client-5;
+            }
+
+            div {
+                height: 100px;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                h3 {
+                    margin: 1rem 0;
+                    margin-right: 2rem;
+                }    
+                    img {
+                        width: 46px;
+                        height: 46px;
+                        object-fit: cover;
+                    }
+            }
+            p {
+                margin-bottom: 0.5rem;
+                font-size: $font-size-s;
+                max-width: 25vw;
+            }
+        }
+    }
 }

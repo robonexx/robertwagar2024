@@ -1,13 +1,9 @@
 import React, { useEffect, useRef } from 'react';
 import { motion, useAnimation, useInView } from 'framer-motion';
 
-import styles from './letterAnimation.module.scss';
+import styles from './letteranimation.module.scss';
 
-interface TextWordAnimationProps {
-  text: string;
-}
-
-const LetterAnimation: React.FC<TextWordAnimationProps> = ({ text }) => {
+const LetterAnimation = ({ text }) => {
   const ref = useRef(null);
   const controls = useAnimation();
 

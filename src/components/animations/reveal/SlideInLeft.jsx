@@ -3,10 +3,6 @@ import { motion, useInView, useAnimation } from 'framer-motion';
 
 import styles from './slide.module.scss';
 
-interface Props {
-  children: JSX.Element;
-}
-
 const slideVariants = {
   hidden: { opacity: 0, x: -200 },
   visible: {
@@ -16,7 +12,7 @@ const slideVariants = {
   },
 };
 
-export const SlideInLeft = ({ children }: Props) => {
+export const SlideInLeft = ({ children }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
