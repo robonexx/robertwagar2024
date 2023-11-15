@@ -16,6 +16,10 @@
       margin-top: 5rem;
       padding: 0 2rem;
       height: 20vh;
+
+      @media (min-width: 768px) {
+           margin-top: 15rem;
+      }
       }
 
       .section {
