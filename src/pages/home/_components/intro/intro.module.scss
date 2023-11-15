@@ -4,6 +4,9 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    padding-left: $body-space;
+    padding-right: $body-space;
+  
 
     .intro {
         display: flex;
@@ -20,6 +23,7 @@
         text-align: center;
         white-space: nowrap;
         filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.808));
+        opacity: 0;
 
         @media (min-width: 960px) {
             font-size: $font-size-xxl;
@@ -27,8 +31,9 @@
     }
 
     .image_wrapper {
+        opacity: 0;
         width: 100%;
-        height: 100vh;
+        height: 30vh;
         position: absolute;
         overflow: hidden;
         border: 1px solid $color-client-3;
@@ -39,12 +44,6 @@
             height: 110%;
             object-fit: cover;
         object-position: center 30%;
-
-        @media (min-width: 960px) {
-            width: 200%;
-            height: 300%;
-            object-position: center center;
-          }
         }
     }
 }

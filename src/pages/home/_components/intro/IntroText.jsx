@@ -29,6 +29,7 @@ function AnimatedText({ children }) {
     gsap.fromTo(
       el,
       {
+        delay: 3,
         opacity: 0,
         y: 200,
         duration: 2,
@@ -37,10 +38,10 @@ function AnimatedText({ children }) {
       {
         opacity: 1,
         y: 0,
-        delay: 2,
+        delay: 3,
         duration: 1,
         zIndex: '1',
-      }
+      }, 0
     );
   }, []);
 

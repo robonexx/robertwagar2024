@@ -1,17 +1,17 @@
 @use '../../../../styles/base/' as *;
 .text {
   position: relative;
+  width: 100%;
   margin-top: 20vh;
-  margin-left: 10%;
-  width: 80%;
   color: $color-client-1;
   font-size: $font-size-m;
   text-transform: uppercase;
   text-align: left;
+  padding-left: $body-space;
+  padding-right: $body-space;
 
   @media (min-width: 960px) {
     margin-top: 10vh;
-    margin-left: 10%;
     text-align: left;
   }
 

@@ -2,17 +2,15 @@
 
 .item_headline {
   max-width: 80vw;
-  margin: 0;
+  margin: 0 0.5rem;
   padding: 0 1rem;
   color: transparent;
   font-family: $font-headline;
-  -webkit-text-stroke: 1px $color-client-3 !important;
-  background-color: $color-client-alt;
+  -webkit-text-stroke: 1px $color-client-1 !important;
   font-size: $font-size-xxl;
   filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.335));
 
   @media (min-width: 768px) {
-     font-size: $font-size-xxl;
     padding: 0 2rem;
   }
 }

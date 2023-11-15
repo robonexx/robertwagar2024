@@ -14,14 +14,14 @@ const Nav = ({ active, children }) => {
       initial='initial'
       animate='enter'
       exit='exit'
-    >
+    ><Link
+    className={styles.link}
+    to='/'
+  >
+    Robert Wägar
+  </Link>
       <ul className={`${styles.menu} ${active ? styles.open : ''}`}>
-        <Link
-          className={styles.link}
-          to='/'
-        >
-          Robert Wägar
-        </Link>
+        
         {children}
       </ul>
     </motion.nav>

@@ -7,13 +7,15 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Intro = () => {
   const introImageRef = useRef(null);
-
+  const textRef = useRef(null);
   useLayoutEffect(() => {
-
-    const introImg = introImageRef.current
+    const introImg = introImageRef.current;
+    const text = textRef.current;
     const timeline = gsap.timeline({
       ScrollTrigger: {
         trigger: document.documentElement,
+        delay: 3,
+        duration: 0.6,
         start: 'top',
         end: '+=500px',
         scrub: true,
@@ -23,29 +25,31 @@ const Intro = () => {
 
     timeline.from(
       introImg,
-      { height: '100vh', width: '100vw', opacity: 0 },
+      { height: '100vh', width: '100vw', opacity: 0, delay: 2 },
       0
-    );
-    timeline.to(
-      introImg,
-      { height: '200px', width: '80vw', opacity: 1, duration: 0.6, delay: 2, filter: 'brightness(15%)' },
-      0
-    );
+    ),
+      timeline.to(introImg, {
+        height: '200px',
+        width: '100%',
+        opacity: 1,
+        duration: 0.6,
+        delay: 2,
+        filter: 'brightness(15%)',
+      }),
+      timeline.to(text, {
+        opacity: 1,
+        duration: 0.6,
+      });
   }, []);
 
   return (
     <div className={styles.intro_wrapper}>
       <div className={styles.intro}>
-        <div
-          className={styles.image_wrapper}
-          data-scroll
-          data-scroll-speed='0.3'
-          ref={introImageRef}
-        >
+        <div className={styles.image_wrapper} ref={introImageRef}>
           <img src={IMG2} alt='Robert Wägar' loading='lazy' />
         </div>
-        <h1 className={styles.headline} data-scroll data-scroll-speed='-0.3'>
-           [kɹiːˌe͡ɪtˈɪvɪti]
+        <h1 className={styles.headline} ref={textRef}>
+          [kɹiːˌe͡ɪtˈɪvɪti]
         </h1>
       </div>
     </div>

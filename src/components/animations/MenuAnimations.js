@@ -2,7 +2,7 @@ export const navSlide = {
   initial: { x: 'calc(100% + 200px)', opacity: 0 },
   enter: {
     x: '0',
-    opacity: 1,
+    opacity: [0, 1],
     transition: { duration: 0.6, ease: [0.76, 0, 0.24, 1] },
   },
   exit: {

@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@react-hook/window-size": "^3.1.1",
+    "animejs": "^3.2.1",
     "axios": "^1.6.0",
     "framer-motion": "^10.16.4",
     "gsap": "^3.12.2",

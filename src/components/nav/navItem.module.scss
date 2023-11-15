@@ -36,9 +36,10 @@
     position: relative;
     text-decoration: none;
     text-transform: capitalize;
-    font-family: $font-base;
+    font-family: $font-secondary;
     color: $color-client-white;
     font-size: $font-size-m;
+    text-shadow: $text-shadow-primary;
 
     @media screen and (min-width: 960px) {
       padding: 1rem 0.5rem;

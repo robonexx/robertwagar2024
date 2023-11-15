@@ -59,7 +59,7 @@ $transition-timing-function: cubic-bezier(0.45, 0, 0.55, 1);
   .content {
     display: flex;
     flex-direction: column;
-    font-family: $font-base;
+    font-family: $font-primary;
 
     .title {
       margin-top: calc(($line-height - 1) / 2 * -1em);

@@ -9,21 +9,21 @@ import Hero from './_components/hero/Hero';
 import ProductList from '../../components/productlist/ProductList';
 import ProductItem from '../../components/productitem/ProductItem';
 import { productData } from '../../assets/constants/productData';
-import useMediaQuery from '../../hooks/useMediaQuery';
 import Grid from '../../components/_ui/gridsystem/Grid';
 import GridItem from '../../components/_ui/gridsystem/GridItem';
 import LinkBtn from '../../components/_ui/Link/HashLinkBtn';
+import ItemHeadline from '../../components/headline/ItemHeadline';
 
 export const Home = () => {
   return (
     <div className={styles.home}>
       <PageTransition />
-      <Hero />
+       <Hero />
       <div className={styles.sidescroll_wrapper}>
         <SideScroll title='Developing user experiences, interactions & bringing ideas to life' />
       </div>
-      <section className={styles.section}>
-        <h1>A few projects</h1>
+      <section className={styles.section}>        
+        <ItemHeadline title='Projects'/>
         <BgEllipse />
         <ProductList>
           {productData &&
