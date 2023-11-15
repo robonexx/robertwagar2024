@@ -1,7 +1,6 @@
 import ItemHeadline from '../../../../components/headline/ItemHeadline';
 import styles from './aboutme.module.scss';
 import EYE from '../../../../assets/images/eye.png';
-import LetterAnimation from '../../../../components/animations/letterAnimation/LetterAnimaion';
 import { Reveal } from '../../../../components/animations/reveal/Reveal';
 import { SlideInLeft } from '../../../../components/animations/reveal/SlideInLeft';
 
