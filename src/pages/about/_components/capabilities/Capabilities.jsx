@@ -2,7 +2,7 @@ import { Reveal } from '../../../../components/animations/reveal/Reveal';
 import { SlideInLeft } from '../../../../components/animations/reveal/SlideInLeft';
 import ItemHeadline from '../../../../components/headline/ItemHeadline';
 import styles from './capabilities.module.scss';
-import Card from './card';
+import SkillCard from './SkillCard';
 
 const cardData = [
   {
@@ -95,12 +95,13 @@ const Capabilities = () => {
       <Reveal>
         <section>
           {cardData.map((data) => (
-            <Card {...data} />
+            <SkillCard {...data} />
           ))}
         </section>
         <p>
-          Without fancy icons and desc: Vite, Supabase, Firebase, Sanity, ReCharts, Radix-ui, MUI,
-          Styled-components, Tailwind, Bootstrap, Vue, C# & Java fundamentals{' '}
+          Without fancy icons and desc: Vite, Supabase, Firebase, Sanity,
+          ReCharts, Radix-ui, MUI, Styled-components, Tailwind, Bootstrap, Vue,
+          C# & Java fundamentals{' '}
         </p>
       </Reveal>
     </div>
