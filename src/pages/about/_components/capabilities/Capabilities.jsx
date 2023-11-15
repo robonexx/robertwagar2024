@@ -99,7 +99,7 @@ const Capabilities = () => {
           ))}
         </section>
         <p>
-          Without fancy icons and desc: Vite, Supabase, Firebase, Sanity,
+          Without fancy icons and desc: Vite, Supabase, Firebase, Sanity, ReCharts, Radix-ui, MUI,
           Styled-components, Tailwind, Bootstrap, Vue, C# & Java fundamentals{' '}
         </p>
       </Reveal>
