@@ -5,8 +5,10 @@ import EYE from '../../../../assets/images/eye.png';
 const AboutMe = () => {
   return (
     <div className={styles.aboutme}>
-      <ItemHeadline title='Me myself & ' />{' '}
-      <img src={EYE} alt='an eye icon'></img>
+      <div>
+        <ItemHeadline title='Me myself & ' />{' '}
+        <img src={EYE} alt='an eye icon'></img>
+      </div>
       <p>
         Greetings! I&apos;m Robert Wägar, a creative frontend developer based in
         Stockholm. With a natural curiosity, I continuously seek new
