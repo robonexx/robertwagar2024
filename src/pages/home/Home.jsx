@@ -23,7 +23,7 @@ export const Home = () => {
         <SideScroll title='Developing user experiences, interactions & bringing ideas to life' />
       </div>
       <section className={styles.section}>        
-        <ItemHeadline title='Projects'/>
+        <ItemHeadline title='Selected projects'/>
         <BgEllipse />
         <ProductList>
           {productData &&

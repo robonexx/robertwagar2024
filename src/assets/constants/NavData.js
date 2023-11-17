@@ -14,7 +14,7 @@ export const navData = [
     i: 1,
   },
   {
-    title: 'work',
+    title: 'projects',
     path: '/work',
     id: 3,
 
