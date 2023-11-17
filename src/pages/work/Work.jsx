@@ -22,7 +22,7 @@ export const Work = () => {
       <PageTransition />
       <Background2 />
       <div className={styles.top_section}>
-        <Headline title={'Work'} />
+        <Headline title={'Projects'} />
         <BgEllipse />
       </div>
       <section>

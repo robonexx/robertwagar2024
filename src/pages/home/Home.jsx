@@ -18,12 +18,12 @@ export const Home = () => {
   return (
     <div className={styles.home}>
       <PageTransition />
-       <Hero />
+      <Hero />
       <div className={styles.sidescroll_wrapper}>
         <SideScroll title='Developing user experiences, interactions & bringing ideas to life' />
       </div>
-      <section className={styles.section}>        
-        <ItemHeadline title='Selected projects'/>
+      <section className={styles.section}>
+        <ItemHeadline title='Selected projects' />
         <BgEllipse />
         <ProductList>
           {productData &&
@@ -36,28 +36,13 @@ export const Home = () => {
       <section className={styles.section}>
         <Grid>
           <GridItem>
-            <h2>Github</h2>
-            <p>
-              I've been playing around with some cool stuff on GitHub thru the
-              past years. There is Check out my latest projects. There's a bit
-              of everything, so feel free to take a peek and let me know what
-              you think! Cheers! 🚀
-            </p>
-            <LinkBtn
-              href='https://github.com/robonexx'
-              rel='noopener noreferrer'
-              title='Github'
-              target='_blank'
-            />
-          </GridItem>
-          <GridItem>
             <h2>Projects / work</h2>
             <p>
               You can also check some more projects right here. Take a peek at
               my cool projects. From tech wonders to creative gems, there's a
               bit of everything.
             </p>
-            <LinkBtn href='./work/' title='work' />
+            <LinkBtn href='./work/' title='Check Projects' />
           </GridItem>
           <GridItem>
             <h2>Components</h2>
@@ -68,6 +53,21 @@ export const Home = () => {
               projects.
             </p>
             <LinkBtn href='./work/#components' title='check components' />
+          </GridItem>
+          <GridItem>
+            <h2>Github</h2>
+            <p>
+              I've been playing around with some cool stuff on GitHub thru the
+              past years. There is Check out my latest projects. There's a bit
+              of everything, so feel free to take a peek and let me know what
+              you think! Cheers! 🚀
+            </p>
+            <LinkBtn
+              href='https://github.com/robonexx'
+              rel='noopener noreferrer'
+              title='Check Github'
+              target='_blank'
+            />
           </GridItem>
         </Grid>
         {/* <Silhuette /> */}

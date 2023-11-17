@@ -16,7 +16,7 @@ export const productData = [
     id: 1,
     image: IMG10,
     github: 'https://github.com/robonexx/vga-dashboard',
-    demo: 'https://',
+    demo: 'https://vgadashboard.vercel.app',
   },
   {
     title: 'Funkcamp 2024',
