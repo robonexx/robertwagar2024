@@ -3,7 +3,6 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import styles from './intro.module.scss';
 import IMG2 from '../../../../assets/images/robertwagar.jpg';
-import Text from './text';
 gsap.registerPlugin(ScrollTrigger);
 
 const Intro = () => {
@@ -51,7 +50,6 @@ const Intro = () => {
         </div>
         <h1 className={styles.headline} ref={textRef}>
           [kɹiːˌe͡ɪtˈɪvɪti]
-          {/* <Text /> */}
         </h1>
       </div>
     </div>
