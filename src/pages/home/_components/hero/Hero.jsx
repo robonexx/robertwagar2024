@@ -5,6 +5,7 @@ import IntroText from '../intro/IntroText';
 import styles from './hero.module.scss';
 import BgEllipse from '../../../../components/bgellipse/BgEllipse';
 import RobSvg from '../robsvg/RobSvg';
+import ScrollIndicator from '../../../../components/scrolldown/ScrollIndicator'
 
 // eslint-disable-next-line react/prop-types
 const Hero = () => {
@@ -15,6 +16,7 @@ const Hero = () => {
       <Intro />
       <IntroText />
       <SideScroll />
+      <ScrollIndicator />
     </div>
   );
 };

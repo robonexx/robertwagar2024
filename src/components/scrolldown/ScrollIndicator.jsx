@@ -1,15 +1,17 @@
 import React from 'react';
-import './scrolldownindicator.scss';
+import styles from './scrolldownindicator.module.scss';
 
-export default function ScrollIndicator() {
+const ScrollIndicator = () => {
   return (
-    <div className='top-scroll-wrapper'>
-      <div className='top-scroll-text'>
-        <span className='top-scroll-txtIn'>scroll</span>
+    <div className={styles['top-scroll-wrapper']}>
+      <div className={styles['top-scroll-text']}>
+        <span className={styles['top-scroll-txtIn']}>scroll</span>
       </div>
-      <div className='top-scroll-line'>
-        <div className='top-scroll-line-in'></div>
+      <div className={styles['top-scroll-line']}>
+        <div className={styles['top-scroll-line-in']}></div>
       </div>
     </div>
   );
-}
+};
+
+export default ScrollIndicator;

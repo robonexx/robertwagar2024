@@ -27,6 +27,7 @@
 
         @media (min-width: 960px) {
             font-size: $font-size-xxl;
+            transform: scaleY(1.5);
           }
     }
 
@@ -46,4 +47,9 @@
         object-position: center 30%;
         }
     }
+}
+
+.text {
+    margin-top: 5rem;
+    transform: scaleY(1.4);
 }

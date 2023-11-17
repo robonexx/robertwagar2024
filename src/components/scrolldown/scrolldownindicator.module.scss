@@ -1,17 +1,13 @@
+@use '../../styles/base/' as *;
 .top-scroll-wrapper {
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row-reverse;
     align-items: center;
     position: absolute;
-    bottom: 50px;
-    left: 50%;
-    transform: translateX(-50%);
-
-    @media (min-width: 980px) {
-      left: 85%;
+    left: auto;
+      right: $body-space;
       bottom: 30vh;
-    }
 
     .top-scroll-text {
       transform: rotate(90deg);
@@ -19,12 +15,13 @@
       white-space: nowrap;
       font-size: 0.8rem;
       letter-spacing: 0.2em;
-      margin-bottom: 30px;
+      margin-bottom: 2rem;
+      color: #888;
     }
 
     .top-scroll-line {
       width: 1px;
-      height: 80px;
+      height: 120px;
       background-color: #343434;
       overflow: hidden;
 
@@ -32,17 +29,17 @@
         width: 1px;
         height: 100%;
         background-color: white;
-        animation: pulseY infinite 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+        animation: pulseY infinite 3s cubic-bezier(0.075, 0.82, 0.165, 1);
       }
     }
   }
 
   @keyframes pulseY {
     from {
-      transform: translateY(-100px);
+      transform: translateY(-120px);
     }
 
     to {
-      transform: translateY(100px);
+      transform: translateY(120px);
     }
   }

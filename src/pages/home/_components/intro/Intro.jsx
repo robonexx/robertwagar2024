@@ -3,6 +3,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import styles from './intro.module.scss';
 import IMG2 from '../../../../assets/images/robertwagar.jpg';
+import Text from './text';
 gsap.registerPlugin(ScrollTrigger);
 
 const Intro = () => {
@@ -14,7 +15,7 @@ const Intro = () => {
     const timeline = gsap.timeline({
       ScrollTrigger: {
         trigger: document.documentElement,
-        delay: 3,
+        delay: 0,
         duration: 0.6,
         start: 'top',
         end: '+=500px',
@@ -25,7 +26,7 @@ const Intro = () => {
 
     timeline.from(
       introImg,
-      { height: '100vh', width: '100vw', opacity: 0, delay: 2 },
+      { height: '100vh', width: '100vw', opacity: 0, delay: 0 },
       0
     ),
       timeline.to(introImg, {
@@ -33,7 +34,7 @@ const Intro = () => {
         width: '100%',
         opacity: 1,
         duration: 0.6,
-        delay: 2,
+        delay: 0.5,
         filter: 'brightness(15%)',
       }),
       timeline.to(text, {
@@ -50,6 +51,7 @@ const Intro = () => {
         </div>
         <h1 className={styles.headline} ref={textRef}>
           [kɹiːˌe͡ɪtˈɪvɪti]
+          {/* <Text /> */}
         </h1>
       </div>
     </div>
