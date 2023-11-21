@@ -3,9 +3,9 @@ import ShopIcon from '../../../../assets/icons/akar-icons_cart.svg';
 
 export const Btn = styled.button`
   position: relative;
-  width: 120px;
-  height: 42px;
-  border-radius: 73px;
+  width: 6rem;
+  height: 2.25rem;
+  border-radius: 25px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,9 +13,9 @@ export const Btn = styled.button`
   pointer-events: none;
   transition: all 0.4s linear;
 
-  @media (max-width: 768px) {
-    width: 6rem;
-    height: 2rem;
+  @media (min-width: 768px) {
+    width: 8.25rem;
+    height: 3.25rem;
   }
 
   &:before {
@@ -23,7 +23,7 @@ export const Btn = styled.button`
     position: absolute;
     z-index: -1;
     inset: 0;
-    border-radius: 73px;
+    border-radius: 25px;
     background-image: radial-gradient(circle, #3dbda7, #3dbda7);
     pointer-events: fill;
   }
