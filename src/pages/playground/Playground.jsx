@@ -1,6 +1,6 @@
 import PageTransition from '../../components/animations/PageTransition';
 import BgEllipse from '../../components/bgellipse/BgEllipse';
-import GithubConnect from '../../components/githubconnect/GithubConnect';
+/* import GithubConnect from '../../components/githubconnect/GithubConnect'; */
 import Headline from '../../components/headline/Headline';
 import { Silhuette } from '../../components/silhuette/Silhuette';
 import styles from './playground.module.scss';
@@ -15,7 +15,8 @@ const Playground = () => {
       <Silhuette />
       <BgEllipse />
       <section>
-        <GithubConnect />
+        <h1>coming soon...</h1>
+        {/* <GithubConnect /> */}
       </section>
     </div>
   );
