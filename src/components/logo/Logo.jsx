@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './logo.module.scss';
 import { Link } from 'react-router-dom';
 import {motion} from 'framer-motion'
-import LOGO from '../../assets/images/robicon.png';
+import LOGO from '../../assets/images/robIcon.png';
 
 const Logo = () => {
   return (
