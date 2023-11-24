@@ -1,3 +1,4 @@
+@use '../../styles/base/' as *;
 .contact {
   width: 100%;
   min-height: 100%;
@@ -13,6 +14,161 @@
 
     @media (min-width: 960px) {
       padding: 10rem 0 2rem 4rem;
+    }
+  }
+
+  h2 {
+    margin: 0 auto;
+    padding: 0 2rem;
+    font-size: $font-size-l;
+    color: $color-client-2;
+    text-transform: uppercase;
+
+    &:last-of-type {
+      margin-bottom: 4rem;
+    }
+  }
+
+  p {
+    margin: 2rem auto;
+    padding: 0 2rem;
+    color: $color-client-2;
+    width: 80%;
+    font-size: $font-size-base;
+
+    @media (min-width: 960px) {
+      margin: auto auto 0;
+      width: 100%;
+    }
+  }
+
+  .contact_form {
+    position: relative;
+    margin: 0 auto;
+    height: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 2;
+
+    &:valid input[type='submit'] {
+      color: #8f8f8f;
+      background-color: $color-client-1;
+
+      &:hover {
+        transition: all 0.4s ease-in-out;
+        color: $color-client-white;
+        background-color: $color-client-2;
+      }
+    }
+    &:invalid input[type='submit'] {
+      &:hover {
+        transition: all 0.4s ease-in-out;
+        color: $color-client-white;
+        background-color: rgba(250, 83, 54, 0.959);
+      }
+    }
+
+    .input_field {
+      position: relative;
+      margin: 0.25rem auto 0.5rem;
+      width: 80%;
+
+      .check_icon {
+        position: absolute;
+        margin-left: 0.25rem;
+        opacity: 0;
+
+        &:last-child {
+          top: 0;
+        }
+      }
+    }
+
+    input,
+    textarea {
+      position: relative;
+      padding: 0.25rem 0.5rem;
+      color: darken($color-client-white, 25%);
+      font-size: font-size-sm;
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px solid;
+      width: 100%;
+
+      &[type='textarea'] {
+        height: 20vh;
+        border: 1px solid #888;
+      }
+    }
+
+    input:focus,
+    textarea:focus {
+      outline: none;
+      border-bottom: 1px solid $color-client-white;
+    }
+
+    input[type='submit'] {
+      margin: 1rem auto 0;
+      padding: 1rem 2rem;
+      width: 40%;
+      color: #888;
+      background-color: transparent;
+      border: 1px solid #888;
+      cursor: pointer;
+
+      /* &:hover {
+                    background-color: #ffa500;
+            } */
+    }
+
+    label {
+      margin: 0.25rem auto 0.25rem;
+      text-align: left;
+      font-size: $font-size-base;
+      color: $color-client-3;
+      width: 80%;
+    }
+
+    input:invalid {
+      border-bottom-color: #5c5c5c;
+      ~ .check_icon {
+        opacity: 0.3;
+      }
+    }
+
+    input:not([type='submit']):valid {
+      outline: none;
+      border-bottom-color: $color-client-1;
+
+      ~ .check_icon {
+        opacity: 1;
+      }
+    }
+
+    textarea:invalid {
+      border: 1px solid #88888880;
+      ~ .check_icon {
+        opacity: 0.3;
+      }
+    }
+    textarea:valid {
+      border: 1px solid $color-client-1;
+
+      ~ .check_icon {
+        opacity: 1;
+      }
+    }
+
+    > .message {
+      position: relative;
+      margin: 1rem auto;
+      width: 60%;
+      height: 20px;
+      font-size: 12px;
+
+      color: $color-client-white;
     }
   }
 }

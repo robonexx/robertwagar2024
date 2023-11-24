@@ -17,6 +17,7 @@ import CustomButton from './_components/custombutton/CustomButton';
 //styling
 
 export const Work = () => {
+  
   return (
     <div className={styles.work}>
       <PageTransition />

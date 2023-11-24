@@ -6,11 +6,12 @@ import './Coffee.scss';
 const svgVariants = {
   hidden: {
     opacity: 0,
+    x: 0,
   },
   visible: {
-    opacity: 1,
+    opacity: [1, 0.05],
+    x: [0, 0, 0, 0, 250],
     transition: {
-      delay: 0.1,
       duration: 2,
     },
   },
