@@ -18,6 +18,7 @@ import ScrollToTop from './utils/ScrollToTop';
 
 // styles
 import styles from './app.module.scss';
+import Logo from './components/logo/Logo';
 
 function App() {
   const [active, setActive] = useState(false);
@@ -39,6 +40,7 @@ function App() {
 
   return (
     <main className={styles.main}>
+      <Logo />
       <Background2 />
       <MenuBtn active={active} setActive={setActive} />
       <AnimatePresence mode='wait'>

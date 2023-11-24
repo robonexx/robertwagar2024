@@ -1,9 +1,11 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import anime from 'animejs';
 import './robsvg.scss';
+import useMediaQuery from '../../../../hooks/useMediaQuery';
 
 const RobSvg = () => {
   const [isLoading, setIsLoading] = useState(true);
+  const isDesktop = useMediaQuery('(min-width: 768px)');
 
   const Animate = useCallback(() => {
     const timeline = anime.timeline({
@@ -23,6 +25,7 @@ const RobSvg = () => {
         },
         direction: 'forwards',
         loop: false,
+        height: 400,
       })
       .add({
         targets: '.eye',
@@ -33,10 +36,15 @@ const RobSvg = () => {
       })
 
       .add({
-        targets: '.intro',
+        targets: '.rob',
+        scale: 0.3,
+        left: isDesktop ? '-400px' : '-100px',
+        top: isDesktop ? '2rem' : '1rem',
+        width: 120,
+        height: 120,
+        direction: 'forwards',
+        duration: 800,
         opacity: 0,
-        duration: 600,
-        zIndex: '-10'
       });
   }, []);
 

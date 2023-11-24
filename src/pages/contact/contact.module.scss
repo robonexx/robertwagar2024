@@ -18,11 +18,15 @@
   }
 
   h2 {
-    margin: 0 auto;
+    margin: 4rem auto 0;
     padding: 0 2rem;
     font-size: $font-size-l;
     color: $color-client-2;
     text-transform: uppercase;
+
+    @media (min-width: 960px) {
+      margin: 0 auto;
+    }
 
     &:last-of-type {
       margin-bottom: 4rem;
@@ -51,6 +55,11 @@
     flex-direction: column;
     align-items: flex-start;
     z-index: 2;
+
+    @media (min-width: 960px) {
+      height: 100%;
+      margin: auto;
+    }
 
     &:valid input[type='submit'] {
       color: #8f8f8f;

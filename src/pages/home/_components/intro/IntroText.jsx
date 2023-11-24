@@ -38,7 +38,7 @@ function AnimatedText({ children }) {
       {
         opacity: 1,
         y: 0,
-        delay: 3,
+        delay: 4,
         duration: 1,
         zIndex: '1',
       }, 0

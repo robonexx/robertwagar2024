@@ -5,13 +5,15 @@ import IntroText from '../intro/IntroText';
 import styles from './hero.module.scss';
 import BgEllipse from '../../../../components/bgellipse/BgEllipse';
 import ScrollIndicator from '../../../../components/scrolldown/ScrollIndicator'
+import RobSvg from '../robsvg/RobSvg';
 
 // eslint-disable-next-line react/prop-types
 const Hero = () => {
   return (
     <div className={styles.hero}>
       <BgEllipse />
-      <Intro />
+      {/* <Intro /> */}
+      <RobSvg />
       <IntroText />
       <SideScroll />
       <ScrollIndicator />

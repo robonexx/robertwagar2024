@@ -37,7 +37,7 @@ export const ProductCardWrapper = styled.div`
 
       @media (min-width: 768px) {
         border-radius: 3.125rem;
-        height: 100%
+        height: 100%;
       }
     }
   }
@@ -49,7 +49,7 @@ export const ProductCardWrapper = styled.div`
     width: 50%;
 
     @media (min-width: 768px) {
-      bottom: 2px;
+      bottom: 6px;
       right: 2rem;
       border-radius: 1.125rem;
     }
