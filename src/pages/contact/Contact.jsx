@@ -74,6 +74,7 @@ const Contact = () => {
       setValidationMessage(
         'Thanks you for getting in touch with funkcamp, we will answer you email shortly!'
       );
+      setIsButtonDisabled(true)
       resetForm();
       setTimeout(() => {
         navigate('/');

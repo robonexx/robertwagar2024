@@ -9,8 +9,9 @@
   flex-direction: column;
 
   .top_section {
+    margin-top: 10vh;
     max-width: 90vw;
-    padding: 0 2rem;
+    padding: 0 2rem 0 0;
 
     @media (min-width: 960px) {
       padding: 10rem 0 2rem 4rem;
@@ -34,7 +35,7 @@
   }
 
   p {
-    margin: 2rem auto;
+    margin: 2rem auto 4rem;
     padding: 0 2rem;
     color: $color-client-2;
     width: 80%;
@@ -63,19 +64,20 @@
 
     &:valid input[type='submit'] {
       color: #8f8f8f;
-      background-color: $color-client-1;
+      background-color: $color-client-4;
 
       &:hover {
         transition: all 0.4s ease-in-out;
         color: $color-client-white;
-        background-color: $color-client-2;
+        background-color: $color-client-5;
       }
     }
+
     &:invalid input[type='submit'] {
       &:hover {
         transition: all 0.4s ease-in-out;
         color: $color-client-white;
-        background-color: rgba(250, 83, 54, 0.959);
+        background-color: rgba(236, 157, 143, 0.959);
       }
     }
 
