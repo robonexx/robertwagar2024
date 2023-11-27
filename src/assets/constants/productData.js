@@ -94,8 +94,8 @@ export const productData = [
     desc: 'This project was to practice on javascript, html and css, the goal was to create one game, and it ended up being 2 games. Rock, Paper, Scissors and a word guessing game. Fun Fun Fun',
     id: 8,
     image: IMG4,
-    github: 'https://github.com/robonexx/netnews',
-    demo: 'https://netnews23.vercel.app/',
+    github: 'https://github.com/xxrobonexx/gamez',
+    demo: 'https://xxrobone.github.io/gamez/',
   },
   {
     title: 'SL Bikes',
