@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100;400;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Darker+Grotesque:wght@300;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
 
   @font-face {
     font-family: Basement;
@@ -43,6 +43,7 @@ font-family: 'Montserrat', sans-serif;
   $font-primary: SourcePro;
   $font-secondary: SourceProLight;
   $font-headline: CaviarDreamsBold;
+  $font-handwritten: 'Ephesis', cursive;
 
   // used this as example https://ux.stackexchange.com/questions/126390/font-scaling-from-desktop-to-mobile
 

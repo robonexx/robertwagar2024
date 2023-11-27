@@ -13,6 +13,7 @@ import Icon from '../../assets/icons/akar-icons_shopping-bag.svg';
 import Icon2 from '../../assets/icons/akar-icons_chat-add.svg';
 import Icon3 from '../../assets/icons/akar-icons_cart.svg';
 import CustomButton from './_components/custombutton/CustomButton';
+import CardExclusive from '../../components/cards/CardExclusive';
 
 //styling
 
@@ -46,6 +47,11 @@ export const Work = () => {
           <CustomButton title='New Message' icon={Icon2} bgColor='#cc4f29' />
           <CustomButton title='Add to cart' icon={Icon3} bgColor='#121212' />
         </div>
+        <div className={styles.space}></div>
+        <h3>A Nice card</h3>
+        <p>This component is created in React using styled components</p>
+        <div className={styles.space}></div>
+        <CardExclusive />
       </section>
     </div>
   );
