@@ -13,7 +13,7 @@ export const productData = [
     title: 'Game Puls',
     year: '2023',
     tag: '#website #re-desing #in-production',
-    tech: 'React, Vite, Styled-components, Framer-motion',
+    tech: 'React, Vite, TypeScript, Styled-components, Framer-motion',
     desc: 'A gaming dashboard, implementation of ux design, challenge to try to remake a desing without actually checking the sizes and margins, paddings etc. Just using the images and resources and recreating, adding functions to the dashboard',
     id: 1,
     image: IMG10,
