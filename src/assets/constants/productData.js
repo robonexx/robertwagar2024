@@ -105,7 +105,7 @@ export const productData = [
     desc: 'This project was an implementation of ux. The idea was to improve on an existing product or service, and do research about it. I choose S L Stockholm commuter transportation, adding bikes as a new way to travel including in the monthly card for SL',
     id: 9,
     image: IMG5,
-    github: 'https://github.com/robonexx/netnews',
-    demo: 'https://netnews23.vercel.app/',
+    github: 'https://github.com/robonexx/sl_app_ux_implementation',
+    demo: 'https://slappmap.surge.sh/',
   },
 ];
