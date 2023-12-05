@@ -10,7 +10,7 @@
   bottom: 0;
   z-index: 999;
   width: 100%;
-  background: linear-gradient(to bottom left, $color-bg 10%, $color-client-black);
+  background: linear-gradient(to bottom left, $color-bg 10%, $color-client-white);
 
   .link {
     margin-left: 5vw;
@@ -24,7 +24,7 @@
     font-weight: 100;
     font-size: $font-size-l;
     font-family: $font-headline;
-    text-shadow: $text-shadow-primary;
+   /*  text-shadow: $text-shadow-primary; */
 
     @media (min-width: 960px) {
       padding: 0;
