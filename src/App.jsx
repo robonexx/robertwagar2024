@@ -70,11 +70,11 @@ function App() {
         <Route path='/playground' element={<Playground />} />
         <Route path='/contact' element={<Contact />} />
       </Routes>
-      <div className='scrolling'>
+      {/* <div className='scrolling'>
         {scrollY > 500
           ? 'Scrolled more than 500px'
           : 'Still somewhere near the top!'}
-      </div>
+      </div> */}
       <div className={'overlay'}></div>
     </main>
   );

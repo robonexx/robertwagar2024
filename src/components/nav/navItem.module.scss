@@ -42,9 +42,9 @@
     text-decoration: none;
     text-transform: capitalize;
     font-family: $font-secondary;
-    color: $color-client-white;
+    color: $color-client-black;
     font-size: $font-size-m;
-    text-shadow: $text-shadow-primary;
+   /*  text-shadow: $text-shadow-primary; */
 
     @media screen and (min-width: 960px) {
       padding: 1rem 0.5rem;

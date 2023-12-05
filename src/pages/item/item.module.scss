@@ -32,8 +32,8 @@
       padding: 0.5rem 1rem;
       display: flex;
       align-items: center;
-      color: $color-client-4;
-      background-color: $color-client-1;
+      color: $color-client-white;
+      background-color: $color-client-3;
       font-size: $font-size-l;     
       text-decoration: none;
       transition: all 0.4s ease;
@@ -52,8 +52,8 @@
       padding: 0.25rem 1rem;
       display: flex;
       align-items: center;
-      color: $color-client-4;
-      background-color: $color-client-1;
+      color: $color-client-white;
+      background-color: $color-client-3;
       font-size: $font-size-l;     
       text-decoration: none;
       transition: all 0.4s ease;
@@ -87,7 +87,7 @@
       color: $color-client-3;
       font-size: $font-size-xl;
       font-family: $font-headline;
-      background-color: $color-client-alt;
+      background-color: $color-client-5;
       border-top-right-radius: 10px;
       border-top-left-radius: 10px;
       transition: color 0.3s ease-in-out;
@@ -110,7 +110,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: $color-client-alt;
+    background-color: $color-client-5;
 
     @media (min-width: 960px) {
       margin: 2rem auto;

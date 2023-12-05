@@ -15,7 +15,10 @@ const Hero = () => {
     <div className={styles.hero}>
       <BgEllipse />
       {isLoading ? <RobSvg setIsLoading={setIsLoading} /> : <div></div>}
-      <IntroText />
+      <div className={styles.intro_text}>
+        <IntroText />
+      </div>
+
       <SideScroll />
       <ScrollIndicator />
     </div>

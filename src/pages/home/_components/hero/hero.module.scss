@@ -4,3 +4,9 @@
   position: relative;
   height: 100vh;
 }
+
+.intro_text {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}

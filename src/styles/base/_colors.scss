@@ -1,11 +1,16 @@
 
 // colors
 
-$color-bg-dark: #121212;
+/* $color-bg-dark: #121212;
 $color-bg-light: #efefef;
 $color-bg-light-alt: #fff;
 $color-text-primary: #f8f8f8;
-$color-text-secondary: #121212;
+$color-text-secondary: #121212; */
+$color-bg-dark: #eeebeb;
+$color-bg-light: #2e2e2e;
+$color-bg-light-alt: #1a1a1a;
+$color-text-primary: #161616;
+$color-text-secondary: #fdfdfd;
 
 
 // colors client
@@ -19,7 +24,7 @@ $color-shadow: #31413E;
 $color-bg: #1D1E22;
  */
 
- $color-client-1: #ebebeb;
+/*  $color-client-1: #ebebeb;
 $color-client-2: #bcbcbc;
 $color-client-3: #9ea1a2;
 $color-client-4: #555555;
@@ -32,7 +37,21 @@ $color-bg:  #232428;
 $color-bg-alt: #141414;
 $color-client-menu: #0f0f0f;
 $color-client-menu-alt: #0c0c0c;
-$color-bg: #1b1b1b;
+$color-bg: #1b1b1b; */
+ $color-client-1: #121212;
+$color-client-2: #282828;
+$color-client-3: #555555;
+$color-client-4: #d3d3d3;
+$color-client-5: #f0f0f0;
+$color-client-white: #fafafa;
+$color-client-black: #080808;
+$color-client-alt: #afb8b84d;
+$color-shadow: #e7e6e6c9;
+$color-bg:  #e0e0e0;
+$color-bg-alt: #e7e5e5;
+$color-client-menu: #f7f6f6;
+$color-client-menu-alt: #f8f6f6;
+$color-bg: #f7f6f6;
 
 // color scrollbar
 $color-scrollbar-bg: $color-shadow;
@@ -40,7 +59,8 @@ $color-scrollbar-bg: $color-shadow;
 // color gradients
 $color-gradient-green: linear-gradient(120deg, #15332b7c, #10352c77, #173d3d46, #09332d63, #13161623);
 
-$color-gradient-alt: linear-gradient(120deg, #3435347c, #3a3b3b77, #55575746, #30313163, #33333323);
+$color-gradient-alt-dark: linear-gradient(120deg, #3435347c, #3a3b3b77, #55575746, #30313163, #33333323);
+$color-gradient-alt: linear-gradient(120deg, #d3d3d37c, #d5d6d677, #b4b6b646, #d9dbdb63, #ebe8e823);
 
 $color-gradient-purple: linear-gradient(120deg, #574650, #E6D5DF, #6F5E68);
 
