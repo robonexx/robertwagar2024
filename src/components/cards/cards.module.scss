@@ -1,0 +1,73 @@
+// using this for now, might chnage to styled components
+
+.wrapper {
+    margin: 2rem auto;
+    display: flex;
+    position: relative;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    color: #f8f8f8;
+    letter-spacing: 2px;
+
+    @media(min-width: 768px) {
+        width: 80%;
+    }
+  }
+  
+  .item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: clamp(300px, 80vw, 360px);
+
+    @media(min-width: 768px) {
+        width: clamp(240px, 25vw, 400px);
+    }
+  }
+  
+  .item-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 5px;
+    border-bottom: 1px dashed antiquewhite;
+  }
+  .item-header-heading {
+    width: 100%;
+    font-size: clamp(1.25rem, 1.75vw, 1.75rem);
+    font-weight: bold;
+    text-transform: uppercase;
+    
+  }
+  .item-header-heading2 {
+    font-size: clamp(1rem, 2vw, 1.4rem);
+    font-weight: bold;
+    text-transform: uppercase;
+    
+  }
+  .item-image {
+    height: 220px;
+    background-color: #ffffff;
+    margin: 10px 0px;
+    object-fit: contain;
+    object-position: center;
+    overflow: hidden;
+
+    @media (min-width: 768px) {
+        height: 360px;
+    }
+  }
+  
+  .item-image:hover {
+    cursor: pointer;
+  }
+  
+  .item-footer {
+    display: flex;
+    align-items: center;
+    border-top: 1px dashed antiquewhite;
+    padding-top: 5px;
+  }

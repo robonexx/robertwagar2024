@@ -5,8 +5,8 @@ import PNGIMG from '../../assets/images/productimages/model.png';
 
 const cardSize = {
   mobile: {
-    width: '20rem',
-    height: '36rem',
+    width: '16rem',
+    height: '32rem',
   },
 };
 
@@ -18,19 +18,17 @@ const CardContainer = styled.div`
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   margin: 20px auto;
   transition: all 0.3 ease-in-out;
-  width: ${cardSize.mobile.width};
-  height: ${cardSize.mobile.height};
 
-  @media screen and (max-width: 991px) {
-    width: ${cardSize.mobile.width};
-    height: ${cardSize.mobile.height};
+  @media (max-width: 991px) {
+    width: 80%;
+    height: fit-content;
   }
 `;
 
 const ImageContainer = styled.div`
   position: relative;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   box-sizing: border-box;
   width: 100%;
   height: 18rem;
@@ -42,11 +40,11 @@ const ImageContainer = styled.div`
   &::before {
     content: 'VIBE';
     position: absolute;
-    color: #888;
-    font-size: 8rem;
+    color: #88888880;
+    font-size: 6rem;
     font-weight: 800;
-    top: 0;
-    left: 0;
+    top: -2rem;
+    left: 20%;
     width: 20rem;
     height: 20rem;
     display: flex;
@@ -68,15 +66,6 @@ const ImageContainer = styled.div`
   &:not(:hover) {
     transition-delay: 0.5s;
   }
-
-  /*   &:hover .category span {
-    border-color: #ddd;
-    box-shadow: none;
-    padding: 11px 28px;
-  }
-  &:hover .category {
-    margin-top: 0;
-  } */
 `;
 
 const BgImage = styled.div`
@@ -115,9 +104,9 @@ const ImagePng = styled(motion.img)`
 
 const TextContainer = styled.div`
   height: 50%;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
 `;
 
 const Category = styled.div`
@@ -150,7 +139,6 @@ const Category = styled.div`
 const Title = styled.h3`
   font-size: 1rem;
   font-weight: 800;
-  margin: 15px auto;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -158,14 +146,10 @@ const Title = styled.h3`
 `;
 
 const Description = styled.p`
-  margin: 0;
-  text-align: left;
-  width: 100%;
   height: 62px;
   overflow: hidden;
   font-size: 0.8rem;
   line-height: 1;
-  margin-bottom: 10px;
 `;
 
 const Footer = styled.div`
@@ -221,7 +205,7 @@ const BuyButton = styled.a`
 const CardExclusive = () => {
   const ref = useRef(null);
   const inView = useInView(ref, {
-    margin: "500px 0px -50px 0px"
+    margin: '500px 0px -50px 0px',
   });
   return (
     <CardContainer ref={ref}>

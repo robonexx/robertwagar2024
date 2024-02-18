@@ -15,10 +15,13 @@ import Icon3 from '../../assets/icons/akar-icons_cart.svg';
 import CustomButton from './_components/custombutton/CustomButton';
 import CardExclusive from '../../components/cards/CardExclusive';
 
+import image1 from '../../assets/images/nike4.png';
+import image2 from '../../assets/images/nike3.png';
+import HoverEffect from '../../components/cards/HoverEffect';
+
 //styling
 
 export const Work = () => {
-  
   return (
     <div className={styles.work}>
       <PageTransition />
@@ -51,7 +54,18 @@ export const Work = () => {
         <h3>A Nice card</h3>
         <p>This component is created in React using styled components</p>
         <div className={styles.space}></div>
-        <CardExclusive />
+        <section>
+          <ProductList>
+            <CardExclusive />
+            <HoverEffect
+              title="Air Force 1's"
+              subtitle='2024'
+              desc='Only @sneakerspot'
+              img1={image1}
+              img2={image2}
+            />
+          </ProductList>
+        </section>
       </section>
     </div>
   );
