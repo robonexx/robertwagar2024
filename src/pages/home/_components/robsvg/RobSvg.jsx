@@ -21,7 +21,7 @@ const RobSvg = ({setIsLoading}) => {
         targets: '.rob .lines path',
         strokeDashoffset: [anime.setDashoffset, 0],
         easing: 'easeInOutSine',
-        duration: 2000,
+        duration: 1600,
         stroke: '#888',
         delay: function (el, i) {
           return i * 100;
@@ -34,7 +34,7 @@ const RobSvg = ({setIsLoading}) => {
         targets: '.eye',
         d: [eyeOpen, eyeClosed, eyeOpen],
         easing: 'easeInOutSine',
-        delay: 400,
+        delay: 300,
         duration: 500,
       })
 

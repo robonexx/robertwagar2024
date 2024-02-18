@@ -1,20 +1,24 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
 import { FcCheckmark } from 'react-icons/fc';
+import { IoIosPin } from 'react-icons/io';
+import { HiPhone } from 'react-icons/hi2';
+import { AiOutlineMail } from 'react-icons/ai';
+import { RiGithubLine, RiCodepenLine } from 'react-icons/ri';
 
 import Coffee from './_components/coffee/Coffee';
 import Headline from '../../components/headline/Headline';
 import BgEllipse from '../../components/bgellipse/BgEllipse';
 import PageTransition from '../../components/animations/PageTransition';
 
-import styles from './contact.module.scss';
+import styles from './contact2.module.scss';
 import Grid from '../../components/_ui/gridsystem/Grid';
 import GridItem from '../../components/_ui/gridsystem/GridItem';
 import useMediaQuery from '../../hooks/useMediaQuery';
 
-const Contact = () => {
+const Contact2 = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -72,12 +76,12 @@ const Contact = () => {
           }
         );
       setValidationMessage(
-        'Thanks you for getting in touch with me, I will respond to your email shortly!'
+        'Thanks you for getting in touch with me, I will answer your email shortly!'
       );
       setTimeout(() => {
         setValidationMessage('');
       }, 4000);
-      setIsButtonDisabled(true)
+      setIsButtonDisabled(true);
       resetForm();
       setTimeout(() => {
         navigate('/');
@@ -94,18 +98,11 @@ const Contact = () => {
     }
   };
 
- /*  console.log(`name: ${formData.name} \n
+  /*  console.log(`name: ${formData.name} \n
         email: ${formData.email}  \n
         subject: ${formData.subject} \n
         message: ${formData.message}`); */
 
- /*  useEffect(() => {
-    const timeoutId = setTimeout(() => {
-      setValidationMessage('');
-    }, 4000);
-
-    return () => clearTimeout(timeoutId);
-  }, [validationMessage]); */
   return (
     <div className={styles.contact}>
       <PageTransition />
@@ -122,7 +119,17 @@ const Contact = () => {
               transition={{ duration: 0.4, delay: 2, ease: 'easeOut' }}
             >
               Thank you for visiting my portfolio!
-            </motion.h2>
+                      </motion.h2>
+                      <motion.p
+              initial={{ x: -300, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.4, delay: 2.2, ease: 'easeOut' }}
+            >
+              I appreciate your interest and would love to hear from you. Please
+              feel free to reach out regarding any inquiries, opportunities, or
+              feedback you may have. I'm always excited to connect with fellow
+              developers, clients, and industry professionals.
+            </motion.p>
           </GridItem>
           <GridItem>
             <motion.form
@@ -206,16 +213,60 @@ const Contact = () => {
             </motion.form>
           </GridItem>
           <GridItem>
-            <motion.p
-              initial={{ x: -300, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ duration: 0.4, delay: 2.2, ease: 'easeOut' }}
-            >
-              I appreciate your interest and would love to hear from you. Please
-              feel free to reach out regarding any inquiries, opportunities, or
-              feedback you may have. I'm always excited to connect with fellow
-              developers, clients, and industry professionals.
-            </motion.p>
+            <div className={styles['direct-contact-container']}>
+              <ul className={styles['contact-list']}>
+                <li className={styles['list-item']}>
+                  <IoIosPin />
+                  <span className='contact-text place'>Stockholm, Sweden</span>
+                </li>
+
+                <li className={styles['list-item']}>
+                  <HiPhone />
+                  <span className={styles['contact-text phone']}>
+                    <a href='tel:004672-3103233' title='Give me a call'>
+                      {' '}
+                      +46 (0) 72-3103233
+                    </a>
+                  </span>
+                </li>
+
+                <li className={styles['list-item']}>
+                  <AiOutlineMail />
+                  <span className='contact-text gmail'>
+                    <a href='mailto:#' title='Send me an email'>
+                      robertwagar@gmail.com
+                    </a>
+                  </span>
+                </li>
+              </ul>
+
+              <hr />
+              <ul className={styles['social-media-list']}>
+                <li>
+                  <Link
+                    to='https://github.com/robonexx'
+                    target='_blank'
+                    className={styles['contact-icon']}
+                  >
+                    <RiGithubLine />
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to='https://github.com/robonexx'
+                    className={styles['contact-icon']}
+                  >
+                    <RiCodepenLine />
+                  </Link>
+                </li>
+              </ul>
+              <hr />
+
+              <div className='copyright'>
+                &copy; - Robert Wägar
+              </div>
+            </div>
+           
           </GridItem>
         </Grid>
       ) : (
@@ -324,4 +375,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default Contact2;

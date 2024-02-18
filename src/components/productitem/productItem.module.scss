@@ -13,14 +13,21 @@ $transition-timing-function: cubic-bezier(0.45, 0, 0.55, 1);
   min-height: 500px;
   border-top: 1px solid $color-client-2;
   border-bottom: 1px solid $color-client-2;
-  transition: all 0.3s ease-in-out;
+  transition: opacity 0.2s $transition-timing-function;
 
   &:hover, &:active {
     background: $color-gradient-alt;
     cursor: pointer;
 
+    .content {
+      .title {
+        color: $color-client-3;
+      }
+
+    }
+
     .image {
-      border: 1px solid $color-client-1;
+      border: 1px solid $color-client-3;
       filter: brightness(90%);
     }
   }
@@ -67,9 +74,8 @@ $transition-timing-function: cubic-bezier(0.45, 0, 0.55, 1);
       font-size: $font-size-m;
       --line-height: 1.4;
       line-height: $line-height;
-      color: $color-client-1;      
+      color: $color-client-2;      
       letter-spacing: 0.1rem;
-       -webkit-text-stroke: 1px solid rgb(53, 53, 53);
     }
 
     .year {
@@ -100,6 +106,7 @@ $transition-timing-function: cubic-bezier(0.45, 0, 0.55, 1);
       overflow: hidden;  
       border: 1px solid $color-client-2;
       filter: brightness(80%);
+      transition: opacity 0.2s $transition-timing-function;
 
    > img {
     position: absolute;

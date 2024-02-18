@@ -19,6 +19,7 @@ import ScrollToTop from './utils/ScrollToTop';
 // styles
 import styles from './app.module.scss';
 import Logo from './components/logo/Logo';
+import Contact2 from './pages/contact/Contact2';
 
 function App() {
   const [active, setActive] = useState(false);
@@ -69,6 +70,7 @@ function App() {
         <Route path='/work/:id' element={<Item />} />
         <Route path='/playground' element={<Playground />} />
         <Route path='/contact' element={<Contact />} />
+        <Route path='/contact2' element={<Contact2 />} />
       </Routes>
       {/* <div className='scrolling'>
         {scrollY > 500

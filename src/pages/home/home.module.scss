@@ -35,7 +35,9 @@
   min-height: 100vh;
 
   @media (min-width: 960px) {
-    height: 100vh;
+    margin: 0 auto;
+    height: 50vh;
+    width: 70%;
   }
 
   h1 {
@@ -44,6 +46,13 @@
     @media (min-width: 768px) {
       padding: 2rem 0 0 4rem;
     }
+  }
+
+  h2 {
+    font-size: $font-size-m;
+  }
+  p {
+    font-size: $font-size-base;
   }
 }
 
