@@ -8,8 +8,9 @@
 .intro_text {
   position: absolute;
   width: 80%;
-  left: 50%;
-  transform: translate(-50%);
+  padding-left: $body-space;
+    padding-right: $body-space;
+  width: 100%;
 
   @media (min-width: 768px) {
     width: 60%;
