@@ -39,7 +39,7 @@ const fadeInUp = {
 const Item = () => {
   const { id } = useParams();
   const [item, setItem] = useState(null);
- /*  const [showDescription, setShowDescription] = useState(false);
+  /*  const [showDescription, setShowDescription] = useState(false);
 
   const handleRead = () => {
     setShowDescription(false);
@@ -71,14 +71,14 @@ const Item = () => {
     return <div>Loading...</div>;
   }
 
-  const { title, year, tag, desc, tech, image, github, demo } = item;
+  const { title, year, tag, desc, tech, image, github, demo, image2 } = item;
 
   return (
     <motion.div initial='initial' animate='animate' exit={{ opacity: 0 }}>
       <div className={styles.wrapper}>
         <div className={styles.header_buttons}>
           <Link to='/work' className={styles.go_back}>
-           <AiFillCaretLeft/> <span>work</span>
+            <AiFillCaretLeft /> <span>work</span>
           </Link>
           <Link to='/' className={styles.home_link}>
             <AiFillHome />
@@ -104,14 +104,14 @@ const Item = () => {
           >
             <motion.img
               key={id}
-              src={image ? image : ''}
+              src={image2 ? image2 : image}
               initial={{ x: -400, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.25 }}
             />
           </motion.div>
-          
+
           <div className={styles.details}>
             <motion.div variants={stagger} className={styles.inner}>
               <motion.div variants={fadeInUp}>
@@ -120,7 +120,7 @@ const Item = () => {
               </motion.div>
               <motion.div variants={fadeInUp}>
                 <p>Description:</p>
-               {/*  {window.innerWidth > 768 ? (
+                {/*  {window.innerWidth > 768 ? (
                   <div>
                     <button
                       className={
@@ -146,8 +146,8 @@ const Item = () => {
                 ) : (
                   <div></div>
                 )} */}
-               {/*  {!showDescription ? ( */}
-                  <p className={styles.desc}>{desc}</p>
+                {/*  {!showDescription ? ( */}
+                <p className={styles.desc}>{desc}</p>
                 {/* ) : (
                   <TextToSpeech text={desc} />
                 )} */}
@@ -157,25 +157,26 @@ const Item = () => {
                 <p className={styles.tech}>{tech}</p>
               </motion.div>
               <div className={styles.links}>
-                <LinkBtn href={github} title='Code' /><LinkBtn href={demo} title='Demo' />
-          </div>
+                <LinkBtn href={github} title='Code' />
+                <LinkBtn href={demo} title='Demo' />
+              </div>
             </motion.div>
           </div>
         </div>
-          <Link
-            to={`/work/${
-              parseInt(id) <= productData.length - 1 ? parseInt(id) + 1 : 1
-            }`}
-            className={styles.next_btn}
+        <Link
+          to={`/work/${
+            parseInt(id) <= productData.length - 1 ? parseInt(id) + 1 : 1
+          }`}
+          className={styles.next_btn}
+        >
+          <motion.span
+            initial={{ x: -500, y: 0 }}
+            animate={{ x: 0, y: 0 }}
+            transition={{ delay: 0.8, duration: 0.5 }}
           >
-            <motion.span
-              initial={{ x: -500, y: 0 }}
-              animate={{ x: 0, y: 0 }}
-              transition={{ delay: 0.8, duration: 0.5 }}
-            >
-              NEXT PROJECT <AiFillCaretRight />
-            </motion.span>
-          </Link>
+            NEXT PROJECT <AiFillCaretRight />
+          </motion.span>
+        </Link>
       </div>
     </motion.div>
   );

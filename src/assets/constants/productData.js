@@ -8,6 +8,9 @@ import IMG10 from '../../assets/images/projectimages/gamedashboard.png';
 import IMG7 from '../../assets/images/projectimages/hypeintohealth.png';
 import IMG8 from '../../assets/images/projectimages/stories.png';
 
+import IMG11 from '../../assets/images/projectimages/fc24.png';
+import IMG12 from '../../assets/images/projectimages/ll_mockup.png';
+
 export const productData = [
   {
     title: 'Game Puls',
@@ -28,6 +31,7 @@ export const productData = [
     desc: 'Website for a dance camp called funkcamp, this page had to have information about the camp, teacher section and a form to be able to ask questions and register.',
     id: 2,
     image: IMG6,
+    image2: IMG11,
     github: 'https://github.com/robonexx/funkcamp2024',
     demo: 'https://funkcamp2024.vercel.app/',
   },
@@ -39,6 +43,7 @@ export const productData = [
     desc: 'This project was a remake of the https://lockerlegends.net website. Tech used next js, wordpress, sass, framer-motion. You can check the live demo and the repo. You can read more on my github about the problems i had to solve in this project',
     id: 3,
     image: IMG2,
+    image2: IMG12,
     github: 'https://github.com/robonexx/lockerlegends2022',
     demo: 'https://www.lockerlegends.org/',
   },
