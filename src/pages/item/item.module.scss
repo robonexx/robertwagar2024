@@ -32,17 +32,19 @@
       padding: 0.5rem 1rem;
       display: flex;
       align-items: center;
-      color: $color-client-4;
-      background-color: $color-client-1;
-      font-size: $font-size-l;     
+      color: $color-client-2;
+      background-color: transparent;
+      font-size: $font-size-m;  
+      border: 1px solid white;
+      font-size: $font-size-m;     
       text-decoration: none;
       transition: all 0.4s ease;
       z-index: 100;
       cursor: pointer;
   
       &:hover {
-        background-color: $color-client-4;
-        color: $color-client-1;
+          background-color: $color-alt-1;
+        color: $color-client-5;
       }
 
     }
@@ -52,17 +54,18 @@
       padding: 0.25rem 1rem;
       display: flex;
       align-items: center;
-      color: $color-client-4;
-      background-color: $color-client-1;
-      font-size: $font-size-l;     
+      color: $color-client-2;
+      background-color: transparent;
+      font-size: $font-size-m;  
+      border: 1px solid white;
       text-decoration: none;
       transition: all 0.4s ease;
       z-index: 100;
       cursor: pointer;
   
       &:hover {
-        background-color: $color-client-4;
-        color: $color-client-1;
+        background-color: $color-alt-1;
+        color: $color-client-5;
       }
     }
   
@@ -240,33 +243,33 @@
     }
 
     
-    .next_btn {
-      position: absolute;
-      margin-top: 2rem;
-      top: auto;
-      left: 0;
-      bottom: 0;
-      padding: 0.5rem 1rem;
-      width: 100%;
-      
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: $color-client-alt;
-      color: $color-client-1;
-      text-decoration: none;
-      transition: all 0.4s ease;
-      z-index: 100;
-      cursor: pointer;
+  }
+  .next_btn {
+    position: absolute;
+    margin-top: 2rem;
+    top: auto;
+    left: 0;
+    bottom: 0;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-client-alt;
+    color: $color-client-1;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    z-index: 100;
+    cursor: pointer;
 
-      :last-child {
-        padding-top: 0.25rem;
-      }
+    :last-child {
+      padding-top: 0.25rem;
+    }
 
-      &:hover {
-        background-color: $color-client-4;
-        color: white;
-      }
+    &:hover {
+      background-color: $color-alt-2;
+      color: $color-client-5;
     }
   }
 }

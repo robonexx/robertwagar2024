@@ -161,6 +161,7 @@ const Item = () => {
           </div>
             </motion.div>
           </div>
+        </div>
           <Link
             to={`/work/${
               parseInt(id) <= productData.length - 1 ? parseInt(id) + 1 : 1
@@ -175,7 +176,6 @@ const Item = () => {
               NEXT PROJECT <AiFillCaretRight />
             </motion.span>
           </Link>
-        </div>
       </div>
     </motion.div>
   );
