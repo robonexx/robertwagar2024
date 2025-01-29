@@ -39,19 +39,13 @@ function AnimatedText({ children }) {
         y: 0,
         delay: 0,
         duration: 1.5,
-        zIndex: '1',
       },
       0
     );
   }, []);
 
   return (
-    <p
-      className={styles.p}
-      ref={revealText}
-      data-scroll
-      data-scroll-speed='0.2'
-    >
+    <p className={styles.p} ref={revealText}>
       {children}
     </p>
   );

@@ -36,19 +36,18 @@ const ImageContainer = styled.div`
   transition-delay: 1s;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
+  overflow: hidden;
 
   &::before {
     content: 'VIBE';
     position: absolute;
-    color: #88888880;
+    bottom: 3rem;
+    left: 50%;
+    transform: translateX(-40%);
+    color: transparent;
     font-size: 6rem;
     font-weight: 800;
-    top: -2rem;
-    left: 20%;
-    width: 20rem;
-    height: 20rem;
-    display: flex;
-    align-items: flex-end;
+    height: fit-content;
     opacity: 0;
     z-index: -1;
   }
@@ -59,7 +58,9 @@ const ImageContainer = styled.div`
       transition: all 0.4s ease-in-out;
       z-index: 1;
       opacity: 1;
-      filter: blur(3px);
+      filter: blur(1px);
+      text-shadow: -10px 10px 0px #f8f4f4, -20px 20px 0px #6d13f4,
+        -30px 30px 0px #80f0f0d8;
     }
   }
 
@@ -88,8 +89,8 @@ const BgImage = styled.div`
 const ImagePng = styled(motion.img)`
   position: absolute;
   left: 0;
-  top: 0;
-  z-index: 10;
+  bottom: 0;
+  z-index: 0;
   width: 100%;
   height: 100%;
   transition: all 0.3s ease-in-out;
@@ -215,7 +216,7 @@ const CardExclusive = () => {
           src={PNGIMG}
           alt='Product'
           className='png'
-          style={{ top: inView ? '-100px' : '0' }}
+          style={{ top: inView ? '0px' : '100px' }}
         />
       </ImageContainer>
       <TextContainer className='text'>
