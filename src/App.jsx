@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { Home } from './pages/home/Home';
 import About from './pages/about/About';
@@ -19,10 +19,25 @@ import ScrollToTop from './utils/ScrollToTop';
 // styles
 import styles from './app.module.scss';
 import Logo from './components/logo/Logo';
+import LoadingPage from './pages/LoadingPage';
 
 function App() {
   const [active, setActive] = useState(false);
   const [scrollY, setScrollY] = useState(0);
+  const [isLoading, setIsLoading] = useState(false); // ✅ Start as false
+
+  useEffect(() => {
+    const hasVisited = localStorage.getItem('visited');
+
+    if (!hasVisited) {
+      setIsLoading(true); // ✅ Only show loading for first-time visitors
+      localStorage.setItem('visited', 'true');
+
+      setTimeout(() => {
+        setIsLoading(false);
+      }, 5000); // Adjust duration
+    }
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -30,13 +45,16 @@ function App() {
     };
 
     handleScroll();
-
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  // ✅ Correct placement of loading screen
+  if (isLoading) {
+    return <LoadingPage />;
+  }
 
   return (
     <main className={styles.main}>

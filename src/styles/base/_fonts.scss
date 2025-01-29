@@ -37,17 +37,15 @@
 font-family: 'Montserrat', sans-serif;
   */
 
-  /* $font-base: Aileron;
-  $font-headline: Anek, sans-serif; */
+/* $font-base: Aileron;
+$font-headline: Anek, sans-serif; */
   
-  $font-primary: SourcePro;
-  $font-secondary: SourceProLight;
-  $font-headline: CaviarDreamsBold;
-  $font-handwritten: 'Ephesis', cursive;
+$font-primary: SourcePro;
+$font-secondary: SourceProLight;
+$font-headline: CaviarDreamsBold;
+$font-handwritten: 'Ephesis', cursive;
 
-  // used this as example https://ux.stackexchange.com/questions/126390/font-scaling-from-desktop-to-mobile
-
-  // font-sizes
+// font-sizes
 $font-size-s: clamp(0.6875rem, 0.6094rem + 0.25vw, 0.75rem); // h6
 $font-size-base: clamp(1rem, 0.8438rem + 0.5vw, 1.125rem);
 $font-size-m: clamp(1.125rem, 0.9063rem + 0.625vw, 1.375rem); // h5
@@ -55,7 +53,7 @@ $font-size-ml: clamp(1.25rem, 0.9688rem + 0.75vw, 1.5rem); // h4
 $font-size-l: clamp(1.375rem, 0.9063rem + 1.5vw, 1.75rem); // h3
 $font-size-xl: clamp(2.225rem, 0.8438rem + 3vw, 3.25rem); // h2
 $font-size-xxl: clamp(3rem, 0.75rem + 7vw, 6rem); // h1
-$font-size-xxxl: clamp(6rem, 0.9063rem + 10vw, 10.25rem);
+$font-size-xxxl: clamp(6rem, 0.9063rem + 10vw, 10.25rem); // main title
 
 // font weight
 $font-normal: 400;

@@ -12,7 +12,11 @@ const Education = () => {
         </SlideInLeft>
       </div>
       <Reveal>
-        Coming soon...
+        <div className={styles.info}>
+          <h2>Frontend developer </h2>
+          <h4>2 year education</h4>
+        <h4>at Changemaker educations</h4>
+        </div>
       </Reveal>
     </div>
   );

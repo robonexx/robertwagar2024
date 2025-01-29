@@ -29,19 +29,19 @@ function AnimatedText({ children }) {
     gsap.fromTo(
       el,
       {
-        delay: 3,
+        delay: 0.5,
         opacity: 0,
         y: 200,
-        duration: 2,
-        zIndex: '-1',
+        duration: 0,
       },
       {
         opacity: 1,
         y: 0,
-        delay: 4,
-        duration: 1,
+        delay: 0,
+        duration: 1.5,
         zIndex: '1',
-      }, 0
+      },
+      0
     );
   }, []);
 

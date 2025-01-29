@@ -3,8 +3,7 @@ import anime from 'animejs';
 import './robsvg.scss';
 import useMediaQuery from '../../../../hooks/useMediaQuery';
 
-const RobSvg = ({setIsLoading}) => {
-  
+const RobSvg = () => {
   const isDesktop = useMediaQuery('(min-width: 768px)');
 
   const Animate = useCallback(() => {
@@ -12,9 +11,6 @@ const RobSvg = ({setIsLoading}) => {
       targets: '.intro',
       duration: 1000,
       easing: 'easeOutSine',
-      complete: () => {
-        setIsLoading(false);
-      },
     });
     timeline
       .add({
@@ -48,7 +44,6 @@ const RobSvg = ({setIsLoading}) => {
         direction: 'forwards',
         duration: 800,
         opacity: 0,
-        
       });
   }, []);
 
